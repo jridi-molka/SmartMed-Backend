@@ -1,0 +1,35 @@
+# Environnement virtuel Python
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Secrets : ne jamais commiter
+.env
+.env.*
+!.env.example
+
+# Base de données locale
+*.sqlite3
+*.db
+
+# IA : modèles entraînés et notebooks (à adapter avec le dev IA)
+*.pkl
+*.joblib
+*.h5
+*.pt
+.ipynb_checkpoints/
+
+# Éditeur et système
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
