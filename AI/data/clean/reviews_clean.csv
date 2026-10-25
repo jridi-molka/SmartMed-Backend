@@ -1,0 +1,1169 @@
+review_id,doctor_id,rating,comment,sentiment
+1,1,4,"Rendez-vous respecté, très satisfait. Il a pris le temps de bien m'examiner.",positive
+2,1,5,"Excellent médecin, très à l'écoute. Consultation très professionnelle, je recommande.",positive
+3,1,3,"Le prix est correct, l'attente un peu longue.",neutral
+4,1,4,Il a pris le temps de bien m'examiner. Très bon accueil et explications claires.,positive
+5,1,4,"Excellent médecin, très à l'écoute.",positive
+6,1,4,Il a pris le temps de bien m'examiner. Très bon accueil et explications claires.,positive
+7,1,4,"Rendez-vous respecté, très satisfait. Excellent médecin, très à l'écoute.",positive
+8,1,5,Très bon accueil et explications claires.,positive
+9,1,4,"Rendez-vous respecté, très satisfait. Il a pris le temps de bien m'examiner.",positive
+10,1,5,"Consultation très professionnelle, je recommande. Cabinet propre et personnel agréable.",positive
+11,1,5,Il a pris le temps de bien m'examiner.,positive
+12,1,5,Médecin sympathique et compétent.,positive
+13,1,4,Très bon accueil et explications claires.,positive
+14,1,5,"Très bon accueil et explications claires. Consultation très professionnelle, je recommande.",positive
+15,1,4,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+16,1,3,"Service moyen, rien de particulier à signaler.",neutral
+17,2,3,"Service moyen, rien de particulier à signaler.",neutral
+18,2,2,"Médecin peu aimable, je ne reviendrai pas. Accueil désagréable à la réception.",negative
+19,2,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+20,2,5,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+21,2,4,Cabinet propre et personnel agréable.,positive
+22,2,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+23,2,4,"Consultation très professionnelle, je recommande. Cabinet propre et personnel agréable.",positive
+24,2,3,"Consultation correcte, sans plus. Le prix est correct, l'attente un peu longue.",neutral
+25,2,4,"Excellent médecin, très à l'écoute. Très bon accueil et explications claires.",positive
+26,2,5,Cabinet propre et personnel agréable.,positive
+27,2,4,"Rendez-vous respecté, très satisfait.",positive
+28,2,3,"Service moyen, rien de particulier à signaler. Médecin compétent mais un peu pressé.",neutral
+29,2,5,"Consultation très professionnelle, je recommande. Cabinet propre et personnel agréable.",positive
+30,2,4,"Très bon accueil et explications claires. Excellent médecin, très à l'écoute.",positive
+31,2,4,"Médecin sympathique et compétent. Excellent médecin, très à l'écoute.",positive
+32,3,3,"Le prix est correct, l'attente un peu longue.",neutral
+33,3,3,"Consultation correcte, sans plus.",neutral
+34,3,2,Prix trop élevé pour la qualité du service.,negative
+35,3,2,Cabinet sale et mal organisé. Prix trop élevé pour la qualité du service.,negative
+36,3,3,"Service moyen, rien de particulier à signaler.",neutral
+37,3,1,Cabinet sale et mal organisé.,negative
+38,3,3,"Médecin compétent mais un peu pressé. Service moyen, rien de particulier à signaler.",neutral
+39,3,3,"Service moyen, rien de particulier à signaler. Médecin compétent mais un peu pressé.",neutral
+41,3,2,"Consultation très rapide, je n'ai rien compris. Cabinet sale et mal organisé.",negative
+42,3,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+43,3,4,Très bon accueil et explications claires.,positive
+44,3,3,"Service moyen, rien de particulier à signaler.",neutral
+45,3,2,Cabinet sale et mal organisé. Accueil désagréable à la réception.,negative
+46,3,4,"Excellent médecin, très à l'écoute.",positive
+47,3,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+48,3,3,"Le prix est correct, l'attente un peu longue. Service moyen, rien de particulier à signaler.",neutral
+49,3,1,Cabinet sale et mal organisé.,negative
+50,3,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+51,3,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+52,3,3,"Le prix est correct, l'attente un peu longue.",neutral
+53,3,2,Accueil désagréable à la réception. Prix trop élevé pour la qualité du service.,negative
+54,3,4,"Excellent médecin, très à l'écoute.",positive
+55,3,3,"Service moyen, rien de particulier à signaler.",neutral
+57,3,2,Accueil désagréable à la réception. Cabinet sale et mal organisé.,negative
+58,3,4,"Excellent médecin, très à l'écoute.",positive
+59,3,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+60,3,4,Il a pris le temps de bien m'examiner.,positive
+62,3,2,"Médecin peu aimable, je ne reviendrai pas. Rendez-vous en retard de presque deux heures.",negative
+63,3,4,"Consultation très professionnelle, je recommande.",positive
+64,3,3,"Consultation correcte, sans plus.",neutral
+65,3,2,Cabinet sale et mal organisé.,negative
+66,3,3,"Consultation correcte, sans plus.",neutral
+67,4,5,Médecin sympathique et compétent.,positive
+68,4,4,"Excellent médecin, très à l'écoute. Très bon accueil et explications claires.",positive
+69,4,4,"Cabinet propre et personnel agréable. Excellent médecin, très à l'écoute.",positive
+70,4,3,"Service moyen, rien de particulier à signaler. Ça va, j'ai eu ce que je venais chercher.",neutral
+71,4,4,Très bon accueil et explications claires. Cabinet propre et personnel agréable.,positive
+72,4,5,"Rendez-vous respecté, très satisfait. Médecin sympathique et compétent.",positive
+73,4,4,"Rendez-vous respecté, très satisfait. Cabinet propre et personnel agréable.",positive
+74,4,5,Il a pris le temps de bien m'examiner.,positive
+75,4,4,"Excellent médecin, très à l'écoute. Cabinet propre et personnel agréable.",positive
+76,4,5,"Rendez-vous respecté, très satisfait. Excellent médecin, très à l'écoute.",positive
+77,4,4,Il a pris le temps de bien m'examiner. Cabinet propre et personnel agréable.,positive
+78,4,4,Médecin sympathique et compétent. Cabinet propre et personnel agréable.,positive
+79,4,4,"Consultation très professionnelle, je recommande.",positive
+80,4,3,"Consultation correcte, sans plus. Service moyen, rien de particulier à signaler.",neutral
+81,4,4,Il a pris le temps de bien m'examiner.,positive
+82,4,4,"Excellent médecin, très à l'écoute.",positive
+83,4,5,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+84,4,5,"Consultation très professionnelle, je recommande.",positive
+85,5,3,"Consultation correcte, sans plus. Médecin compétent mais un peu pressé.",neutral
+86,5,5,"Consultation très professionnelle, je recommande.",positive
+87,5,3,"Service moyen, rien de particulier à signaler.",neutral
+88,5,5,"Excellent médecin, très à l'écoute.",positive
+89,5,3,"Service moyen, rien de particulier à signaler. Consultation correcte, sans plus.",neutral
+90,5,4,Médecin sympathique et compétent.,positive
+91,5,5,"Rendez-vous respecté, très satisfait.",positive
+92,5,5,Très bon accueil et explications claires.,positive
+93,5,4,"Consultation très professionnelle, je recommande.",positive
+94,5,5,"Consultation très professionnelle, je recommande.",positive
+95,5,5,Cabinet propre et personnel agréable.,positive
+96,5,5,"Rendez-vous respecté, très satisfait. Médecin sympathique et compétent.",positive
+97,5,5,"Rendez-vous respecté, très satisfait. Consultation très professionnelle, je recommande.",positive
+98,5,4,Il a pris le temps de bien m'examiner.,positive
+99,5,5,Cabinet propre et personnel agréable.,positive
+100,5,3,"Ça va, j'ai eu ce que je venais chercher. Service moyen, rien de particulier à signaler.",neutral
+101,5,4,Médecin sympathique et compétent.,positive
+102,5,5,Médecin sympathique et compétent.,positive
+103,5,5,Cabinet propre et personnel agréable.,positive
+104,5,5,"Cabinet propre et personnel agréable. Consultation très professionnelle, je recommande.",positive
+105,5,5,Il a pris le temps de bien m'examiner.,positive
+106,6,4,Médecin sympathique et compétent.,positive
+107,6,4,"Excellent médecin, très à l'écoute.",positive
+108,6,4,"Rendez-vous respecté, très satisfait.",positive
+109,6,4,Très bon accueil et explications claires.,positive
+110,6,5,"Il a pris le temps de bien m'examiner. Rendez-vous respecté, très satisfait.",positive
+111,6,4,Il a pris le temps de bien m'examiner. Très bon accueil et explications claires.,positive
+112,6,4,"Médecin sympathique et compétent. Excellent médecin, très à l'écoute.",positive
+113,6,4,Il a pris le temps de bien m'examiner.,positive
+114,6,3,"Service moyen, rien de particulier à signaler. Médecin compétent mais un peu pressé.",neutral
+115,6,3,"Le prix est correct, l'attente un peu longue.",neutral
+116,6,4,"Excellent médecin, très à l'écoute.",positive
+117,6,4,Médecin sympathique et compétent.,positive
+118,6,3,Médecin compétent mais un peu pressé.,neutral
+119,6,4,"Médecin sympathique et compétent. Excellent médecin, très à l'écoute.",positive
+120,6,4,"Très bon accueil et explications claires. Excellent médecin, très à l'écoute.",positive
+121,6,5,"Rendez-vous respecté, très satisfait.",positive
+122,6,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+123,6,4,Très bon accueil et explications claires.,positive
+124,6,5,Très bon accueil et explications claires.,positive
+125,6,4,Très bon accueil et explications claires. Médecin sympathique et compétent.,positive
+126,6,3,"Médecin compétent mais un peu pressé. Ça va, j'ai eu ce que je venais chercher.",neutral
+127,6,3,"Consultation correcte, sans plus.",neutral
+128,6,5,Médecin sympathique et compétent.,positive
+129,7,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+130,7,3,"Service moyen, rien de particulier à signaler.",neutral
+131,7,3,"Le prix est correct, l'attente un peu longue.",neutral
+132,7,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+133,7,3,Médecin compétent mais un peu pressé.,neutral
+134,7,5,Médecin sympathique et compétent.,positive
+135,7,2,Accueil désagréable à la réception.,negative
+136,7,2,Prix trop élevé pour la qualité du service.,negative
+137,7,2,Accueil désagréable à la réception.,negative
+138,7,3,"Le prix est correct, l'attente un peu longue. Service moyen, rien de particulier à signaler.",neutral
+139,7,4,"Médecin sympathique et compétent. Consultation très professionnelle, je recommande.",positive
+140,7,2,"Prix trop élevé pour la qualité du service. Consultation très rapide, je n'ai rien compris.",negative
+141,7,1,"Accueil désagréable à la réception. Beaucoup trop d'attente, plus d'une heure.",negative
+142,7,2,Accueil désagréable à la réception.,negative
+143,8,5,"Rendez-vous respecté, très satisfait.",positive
+144,8,2,Cabinet sale et mal organisé.,negative
+145,8,4,"Très bon accueil et explications claires. Rendez-vous respecté, très satisfait.",positive
+146,8,5,Il a pris le temps de bien m'examiner.,positive
+147,8,4,Très bon accueil et explications claires.,positive
+148,8,3,"Consultation correcte, sans plus.",neutral
+149,8,3,"Médecin compétent mais un peu pressé. Le prix est correct, l'attente un peu longue.",neutral
+150,8,4,Il a pris le temps de bien m'examiner.,positive
+151,8,4,Médecin sympathique et compétent.,positive
+152,8,4,"Rendez-vous respecté, très satisfait. Consultation très professionnelle, je recommande.",positive
+153,8,3,"Service moyen, rien de particulier à signaler.",neutral
+154,8,5,"Consultation très professionnelle, je recommande.",positive
+155,8,5,"Excellent médecin, très à l'écoute. Rendez-vous respecté, très satisfait.",positive
+156,8,3,"Le prix est correct, l'attente un peu longue.",neutral
+157,8,3,"Le prix est correct, l'attente un peu longue.",neutral
+158,8,4,"Il a pris le temps de bien m'examiner. Excellent médecin, très à l'écoute.",positive
+159,8,4,"Cabinet propre et personnel agréable. Rendez-vous respecté, très satisfait.",positive
+160,8,3,"Service moyen, rien de particulier à signaler. Ça va, j'ai eu ce que je venais chercher.",neutral
+161,8,4,Médecin sympathique et compétent.,positive
+162,8,3,"Service moyen, rien de particulier à signaler.",neutral
+163,8,5,Il a pris le temps de bien m'examiner. Cabinet propre et personnel agréable.,positive
+164,8,4,Cabinet propre et personnel agréable. Très bon accueil et explications claires.,positive
+165,8,3,"Ça va, j'ai eu ce que je venais chercher. Service moyen, rien de particulier à signaler.",neutral
+166,8,3,Médecin compétent mais un peu pressé.,neutral
+167,8,5,Cabinet propre et personnel agréable.,positive
+168,8,4,Médecin sympathique et compétent.,positive
+169,8,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+170,9,4,"Excellent médecin, très à l'écoute. Très bon accueil et explications claires.",positive
+171,9,4,Très bon accueil et explications claires.,positive
+172,9,4,"Excellent médecin, très à l'écoute.",positive
+173,9,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+174,9,3,"Ça va, j'ai eu ce que je venais chercher. Médecin compétent mais un peu pressé.",neutral
+175,9,2,Rendez-vous en retard de presque deux heures. Cabinet sale et mal organisé.,negative
+176,9,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+178,9,3,"Médecin compétent mais un peu pressé. Service moyen, rien de particulier à signaler.",neutral
+179,9,5,"Excellent médecin, très à l'écoute.",positive
+180,9,4,Très bon accueil et explications claires.,positive
+181,9,4,"Rendez-vous respecté, très satisfait.",positive
+182,9,3,"Ça va, j'ai eu ce que je venais chercher. Consultation correcte, sans plus.",neutral
+183,9,5,Très bon accueil et explications claires.,positive
+184,9,3,"Le prix est correct, l'attente un peu longue.",neutral
+185,9,5,Très bon accueil et explications claires.,positive
+186,9,3,"Médecin compétent mais un peu pressé. Consultation correcte, sans plus.",neutral
+187,9,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+188,9,5,"Très bon accueil et explications claires. Rendez-vous respecté, très satisfait.",positive
+189,10,4,"Rendez-vous respecté, très satisfait. Cabinet propre et personnel agréable.",positive
+190,10,4,Très bon accueil et explications claires.,positive
+191,10,3,"Médecin compétent mais un peu pressé. Service moyen, rien de particulier à signaler.",neutral
+192,10,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+193,10,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+194,10,3,Médecin compétent mais un peu pressé.,neutral
+195,10,3,"Médecin compétent mais un peu pressé. Service moyen, rien de particulier à signaler.",neutral
+196,10,2,Rendez-vous en retard de presque deux heures. Prix trop élevé pour la qualité du service.,negative
+197,10,4,"Consultation très professionnelle, je recommande. Rendez-vous respecté, très satisfait.",positive
+198,11,4,"Cabinet propre et personnel agréable. Consultation très professionnelle, je recommande.",positive
+199,11,4,"Excellent médecin, très à l'écoute. Rendez-vous respecté, très satisfait.",positive
+200,11,4,"Consultation très professionnelle, je recommande. Il a pris le temps de bien m'examiner.",positive
+201,11,5,Cabinet propre et personnel agréable.,positive
+202,11,3,"Le prix est correct, l'attente un peu longue. Ça va, j'ai eu ce que je venais chercher.",neutral
+203,11,4,Très bon accueil et explications claires. Cabinet propre et personnel agréable.,positive
+204,11,3,"Ça va, j'ai eu ce que je venais chercher. Le prix est correct, l'attente un peu longue.",neutral
+205,11,3,"Service moyen, rien de particulier à signaler.",neutral
+206,11,5,Très bon accueil et explications claires.,positive
+207,11,3,"Consultation correcte, sans plus.",neutral
+208,11,4,Médecin sympathique et compétent. Cabinet propre et personnel agréable.,positive
+209,11,4,"Médecin sympathique et compétent. Rendez-vous respecté, très satisfait.",positive
+210,11,2,"Beaucoup trop d'attente, plus d'une heure. Cabinet sale et mal organisé.",negative
+211,11,3,"Consultation correcte, sans plus.",neutral
+212,11,5,Il a pris le temps de bien m'examiner.,positive
+213,11,5,Médecin sympathique et compétent. Il a pris le temps de bien m'examiner.,positive
+214,11,3,"Consultation correcte, sans plus. Ça va, j'ai eu ce que je venais chercher.",neutral
+215,11,2,Accueil désagréable à la réception. Rendez-vous en retard de presque deux heures.,negative
+216,11,5,"Excellent médecin, très à l'écoute.",positive
+217,11,4,Cabinet propre et personnel agréable.,positive
+218,11,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+219,11,4,Il a pris le temps de bien m'examiner.,positive
+220,11,4,"Excellent médecin, très à l'écoute.",positive
+221,11,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+222,11,5,"Excellent médecin, très à l'écoute.",positive
+223,11,4,Cabinet propre et personnel agréable.,positive
+224,11,4,Cabinet propre et personnel agréable.,positive
+225,11,5,Il a pris le temps de bien m'examiner.,positive
+226,11,3,"Service moyen, rien de particulier à signaler.",neutral
+227,11,4,"Rendez-vous respecté, très satisfait.",positive
+228,11,4,"Excellent médecin, très à l'écoute.",positive
+229,11,3,"Le prix est correct, l'attente un peu longue.",neutral
+230,11,4,"Rendez-vous respecté, très satisfait. Médecin sympathique et compétent.",positive
+231,11,3,"Ça va, j'ai eu ce que je venais chercher. Le prix est correct, l'attente un peu longue.",neutral
+232,11,4,"Rendez-vous respecté, très satisfait. Médecin sympathique et compétent.",positive
+233,11,2,Accueil désagréable à la réception.,negative
+234,12,5,Très bon accueil et explications claires.,positive
+235,12,4,"Rendez-vous respecté, très satisfait. Très bon accueil et explications claires.",positive
+236,12,3,"Le prix est correct, l'attente un peu longue.",neutral
+237,12,3,"Ça va, j'ai eu ce que je venais chercher. Médecin compétent mais un peu pressé.",neutral
+238,12,3,"Le prix est correct, l'attente un peu longue.",neutral
+239,12,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+240,12,4,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+241,12,4,Cabinet propre et personnel agréable.,positive
+242,12,4,Cabinet propre et personnel agréable.,positive
+243,12,4,"Rendez-vous respecté, très satisfait.",positive
+244,12,4,"Il a pris le temps de bien m'examiner. Excellent médecin, très à l'écoute.",positive
+245,12,4,"Excellent médecin, très à l'écoute.",positive
+246,12,3,"Médecin compétent mais un peu pressé. Service moyen, rien de particulier à signaler.",neutral
+247,12,4,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+248,12,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+249,12,3,"Service moyen, rien de particulier à signaler. Médecin compétent mais un peu pressé.",neutral
+250,12,3,"Consultation correcte, sans plus.",neutral
+251,12,2,"Rendez-vous en retard de presque deux heures. Médecin peu aimable, je ne reviendrai pas.",negative
+252,12,3,Médecin compétent mais un peu pressé.,neutral
+253,13,5,"Rendez-vous respecté, très satisfait.",positive
+254,13,4,"Cabinet propre et personnel agréable. Excellent médecin, très à l'écoute.",positive
+255,13,5,"Consultation très professionnelle, je recommande. Cabinet propre et personnel agréable.",positive
+256,13,3,"Le prix est correct, l'attente un peu longue.",neutral
+257,13,4,Cabinet propre et personnel agréable. Médecin sympathique et compétent.,positive
+258,13,5,"Consultation très professionnelle, je recommande.",positive
+259,13,4,Il a pris le temps de bien m'examiner.,positive
+260,13,5,Médecin sympathique et compétent.,positive
+261,13,5,"Excellent médecin, très à l'écoute.",positive
+262,13,5,"Consultation très professionnelle, je recommande.",positive
+263,13,4,Médecin sympathique et compétent.,positive
+264,13,4,"Consultation très professionnelle, je recommande.",positive
+265,13,5,"Consultation très professionnelle, je recommande.",positive
+266,13,5,"Consultation très professionnelle, je recommande.",positive
+267,13,4,Très bon accueil et explications claires. Cabinet propre et personnel agréable.,positive
+268,13,3,Médecin compétent mais un peu pressé.,neutral
+269,13,5,"Consultation très professionnelle, je recommande.",positive
+270,13,5,"Consultation très professionnelle, je recommande.",positive
+271,13,5,Très bon accueil et explications claires.,positive
+272,13,5,Médecin sympathique et compétent.,positive
+273,13,5,"Excellent médecin, très à l'écoute.",positive
+274,13,5,Médecin sympathique et compétent. Cabinet propre et personnel agréable.,positive
+275,13,5,"Rendez-vous respecté, très satisfait. Excellent médecin, très à l'écoute.",positive
+276,13,5,"Excellent médecin, très à l'écoute.",positive
+277,13,5,Médecin sympathique et compétent.,positive
+278,13,4,Cabinet propre et personnel agréable.,positive
+279,13,5,"Consultation très professionnelle, je recommande.",positive
+280,13,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+281,13,4,"Consultation très professionnelle, je recommande. Rendez-vous respecté, très satisfait.",positive
+282,13,4,Médecin sympathique et compétent.,positive
+283,13,5,Cabinet propre et personnel agréable. Il a pris le temps de bien m'examiner.,positive
+284,13,5,Très bon accueil et explications claires.,positive
+285,14,1,"Médecin peu aimable, je ne reviendrai pas. Consultation très rapide, je n'ai rien compris.",negative
+286,14,3,"Le prix est correct, l'attente un peu longue. Consultation correcte, sans plus.",neutral
+287,14,2,Accueil désagréable à la réception.,negative
+288,14,2,"Consultation très rapide, je n'ai rien compris.",negative
+289,14,3,Médecin compétent mais un peu pressé.,neutral
+290,14,3,"Le prix est correct, l'attente un peu longue.",neutral
+291,14,1,Accueil désagréable à la réception.,negative
+292,14,3,"Consultation correcte, sans plus. Ça va, j'ai eu ce que je venais chercher.",neutral
+293,14,3,"Service moyen, rien de particulier à signaler.",neutral
+294,14,3,"Service moyen, rien de particulier à signaler.",neutral
+295,14,3,"Service moyen, rien de particulier à signaler.",neutral
+296,14,4,Il a pris le temps de bien m'examiner.,positive
+297,14,3,"Le prix est correct, l'attente un peu longue.",neutral
+298,14,3,"Le prix est correct, l'attente un peu longue.",neutral
+299,14,2,Rendez-vous en retard de presque deux heures.,negative
+300,14,2,"Accueil désagréable à la réception. Consultation très rapide, je n'ai rien compris.",negative
+301,14,3,Médecin compétent mais un peu pressé.,neutral
+302,14,3,"Le prix est correct, l'attente un peu longue. Ça va, j'ai eu ce que je venais chercher.",neutral
+303,14,4,Médecin sympathique et compétent.,positive
+304,14,1,Cabinet sale et mal organisé.,negative
+305,15,3,"Le prix est correct, l'attente un peu longue. Consultation correcte, sans plus.",neutral
+306,15,3,"Ça va, j'ai eu ce que je venais chercher. Le prix est correct, l'attente un peu longue.",neutral
+307,15,3,"Service moyen, rien de particulier à signaler.",neutral
+308,15,1,"Prix trop élevé pour la qualité du service. Médecin peu aimable, je ne reviendrai pas.",negative
+309,15,4,Cabinet propre et personnel agréable.,positive
+310,15,3,"Service moyen, rien de particulier à signaler. Le prix est correct, l'attente un peu longue.",neutral
+311,15,2,Prix trop élevé pour la qualité du service.,negative
+312,15,2,Rendez-vous en retard de presque deux heures.,negative
+313,15,3,Médecin compétent mais un peu pressé.,neutral
+314,15,3,Médecin compétent mais un peu pressé.,neutral
+315,15,2,Cabinet sale et mal organisé.,negative
+317,15,3,"Consultation correcte, sans plus.",neutral
+319,16,5,"Cabinet propre et personnel agréable. Consultation très professionnelle, je recommande.",positive
+320,16,5,Médecin sympathique et compétent. Très bon accueil et explications claires.,positive
+321,16,4,"Médecin sympathique et compétent. Rendez-vous respecté, très satisfait.",positive
+322,16,4,"Excellent médecin, très à l'écoute.",positive
+323,16,5,Médecin sympathique et compétent. Il a pris le temps de bien m'examiner.,positive
+324,16,3,"Le prix est correct, l'attente un peu longue.",neutral
+325,16,3,"Médecin compétent mais un peu pressé. Consultation correcte, sans plus.",neutral
+326,16,5,Médecin sympathique et compétent.,positive
+327,16,5,"Cabinet propre et personnel agréable. Rendez-vous respecté, très satisfait.",positive
+329,16,4,"Rendez-vous respecté, très satisfait. Cabinet propre et personnel agréable.",positive
+330,16,5,Il a pris le temps de bien m'examiner.,positive
+331,16,4,"Consultation très professionnelle, je recommande.",positive
+332,16,5,Très bon accueil et explications claires.,positive
+333,16,5,"Excellent médecin, très à l'écoute.",positive
+334,16,5,"Excellent médecin, très à l'écoute. Médecin sympathique et compétent.",positive
+335,16,5,Très bon accueil et explications claires. Médecin sympathique et compétent.,positive
+336,16,3,"Le prix est correct, l'attente un peu longue.",neutral
+337,16,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+338,16,5,Il a pris le temps de bien m'examiner.,positive
+339,16,4,"Consultation très professionnelle, je recommande.",positive
+340,16,4,Très bon accueil et explications claires.,positive
+341,16,5,Médecin sympathique et compétent.,positive
+342,16,4,"Consultation très professionnelle, je recommande. Médecin sympathique et compétent.",positive
+343,16,4,"Excellent médecin, très à l'écoute.",positive
+344,16,4,Médecin sympathique et compétent.,positive
+345,16,4,"Cabinet propre et personnel agréable. Excellent médecin, très à l'écoute.",positive
+346,16,4,"Rendez-vous respecté, très satisfait.",positive
+347,16,4,"Excellent médecin, très à l'écoute.",positive
+348,16,5,"Excellent médecin, très à l'écoute. Médecin sympathique et compétent.",positive
+349,17,4,Il a pris le temps de bien m'examiner.,positive
+350,17,2,Accueil désagréable à la réception. Prix trop élevé pour la qualité du service.,negative
+351,17,4,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+352,17,5,"Consultation très professionnelle, je recommande.",positive
+353,17,4,"Cabinet propre et personnel agréable. Rendez-vous respecté, très satisfait.",positive
+354,17,3,"Consultation correcte, sans plus.",neutral
+355,17,4,Très bon accueil et explications claires.,positive
+356,17,2,"Accueil désagréable à la réception. Médecin peu aimable, je ne reviendrai pas.",negative
+358,17,3,Médecin compétent mais un peu pressé.,neutral
+359,17,5,Médecin sympathique et compétent. Il a pris le temps de bien m'examiner.,positive
+360,17,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+361,17,4,Cabinet propre et personnel agréable.,positive
+363,17,4,"Il a pris le temps de bien m'examiner. Excellent médecin, très à l'écoute.",positive
+364,17,3,"Service moyen, rien de particulier à signaler.",neutral
+365,17,3,"Ça va, j'ai eu ce que je venais chercher. Consultation correcte, sans plus.",neutral
+366,17,3,"Service moyen, rien de particulier à signaler.",neutral
+367,17,4,"Rendez-vous respecté, très satisfait.",positive
+368,17,5,Il a pris le temps de bien m'examiner.,positive
+369,17,4,Très bon accueil et explications claires. Médecin sympathique et compétent.,positive
+370,17,3,"Service moyen, rien de particulier à signaler.",neutral
+371,17,5,"Rendez-vous respecté, très satisfait. Excellent médecin, très à l'écoute.",positive
+372,17,3,"Service moyen, rien de particulier à signaler. Consultation correcte, sans plus.",neutral
+373,17,3,"Consultation correcte, sans plus.",neutral
+374,17,3,Médecin compétent mais un peu pressé.,neutral
+375,17,4,"Rendez-vous respecté, très satisfait. Très bon accueil et explications claires.",positive
+376,17,4,"Excellent médecin, très à l'écoute. Rendez-vous respecté, très satisfait.",positive
+377,17,3,"Consultation correcte, sans plus.",neutral
+378,17,3,"Consultation correcte, sans plus.",neutral
+379,17,4,"Excellent médecin, très à l'écoute.",positive
+380,17,4,"Il a pris le temps de bien m'examiner. Consultation très professionnelle, je recommande.",positive
+381,18,3,"Consultation correcte, sans plus.",neutral
+382,18,3,"Service moyen, rien de particulier à signaler.",neutral
+383,18,2,Accueil désagréable à la réception.,negative
+384,18,3,"Service moyen, rien de particulier à signaler.",neutral
+385,18,3,"Service moyen, rien de particulier à signaler. Consultation correcte, sans plus.",neutral
+386,18,4,"Rendez-vous respecté, très satisfait.",positive
+387,18,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+388,18,3,"Service moyen, rien de particulier à signaler.",neutral
+389,18,3,"Service moyen, rien de particulier à signaler.",neutral
+390,18,3,"Le prix est correct, l'attente un peu longue.",neutral
+391,18,5,Médecin sympathique et compétent.,positive
+392,18,4,Médecin sympathique et compétent. Cabinet propre et personnel agréable.,positive
+393,18,4,"Excellent médecin, très à l'écoute. Très bon accueil et explications claires.",positive
+394,18,3,"Service moyen, rien de particulier à signaler.",neutral
+395,18,4,Il a pris le temps de bien m'examiner.,positive
+396,18,3,"Service moyen, rien de particulier à signaler.",neutral
+397,18,4,"Consultation très professionnelle, je recommande.",positive
+398,18,4,"Rendez-vous respecté, très satisfait.",positive
+399,18,3,"Consultation correcte, sans plus.",neutral
+400,19,3,"Consultation correcte, sans plus.",neutral
+401,19,4,"Excellent médecin, très à l'écoute.",positive
+402,19,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+403,19,5,Très bon accueil et explications claires.,positive
+404,19,3,"Consultation correcte, sans plus.",neutral
+405,19,5,Il a pris le temps de bien m'examiner. Très bon accueil et explications claires.,positive
+406,19,4,Très bon accueil et explications claires.,positive
+407,19,4,Il a pris le temps de bien m'examiner.,positive
+408,19,3,"Le prix est correct, l'attente un peu longue. Ça va, j'ai eu ce que je venais chercher.",neutral
+409,19,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+410,19,2,Rendez-vous en retard de presque deux heures.,negative
+411,19,5,"Consultation très professionnelle, je recommande.",positive
+412,19,3,"Service moyen, rien de particulier à signaler.",neutral
+413,19,1,"Beaucoup trop d'attente, plus d'une heure. Accueil désagréable à la réception.",negative
+414,19,5,"Consultation très professionnelle, je recommande. Rendez-vous respecté, très satisfait.",positive
+415,19,4,"Il a pris le temps de bien m'examiner. Rendez-vous respecté, très satisfait.",positive
+416,19,4,Très bon accueil et explications claires.,positive
+417,19,3,"Service moyen, rien de particulier à signaler.",neutral
+418,19,4,Il a pris le temps de bien m'examiner. Très bon accueil et explications claires.,positive
+419,19,5,"Rendez-vous respecté, très satisfait. Très bon accueil et explications claires.",positive
+420,19,4,Cabinet propre et personnel agréable.,positive
+421,19,3,"Consultation correcte, sans plus.",neutral
+422,19,4,"Consultation très professionnelle, je recommande.",positive
+423,19,4,Il a pris le temps de bien m'examiner.,positive
+424,19,5,"Rendez-vous respecté, très satisfait.",positive
+425,19,4,"Cabinet propre et personnel agréable. Consultation très professionnelle, je recommande.",positive
+426,19,3,"Service moyen, rien de particulier à signaler.",neutral
+427,19,4,"Consultation très professionnelle, je recommande. Il a pris le temps de bien m'examiner.",positive
+428,19,4,Médecin sympathique et compétent.,positive
+429,19,3,"Consultation correcte, sans plus. Service moyen, rien de particulier à signaler.",neutral
+430,19,5,"Excellent médecin, très à l'écoute. Il a pris le temps de bien m'examiner.",positive
+431,19,3,"Service moyen, rien de particulier à signaler.",neutral
+432,19,4,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+433,19,2,"Consultation très rapide, je n'ai rien compris. Médecin peu aimable, je ne reviendrai pas.",negative
+434,19,4,"Consultation très professionnelle, je recommande. Rendez-vous respecté, très satisfait.",positive
+435,19,5,"Excellent médecin, très à l'écoute.",positive
+436,19,5,Cabinet propre et personnel agréable.,positive
+437,19,3,"Le prix est correct, l'attente un peu longue.",neutral
+438,19,4,"Excellent médecin, très à l'écoute.",positive
+439,19,4,"Consultation très professionnelle, je recommande.",positive
+440,20,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+441,20,4,Médecin sympathique et compétent. Il a pris le temps de bien m'examiner.,positive
+442,20,4,"Excellent médecin, très à l'écoute.",positive
+443,20,3,"Ça va, j'ai eu ce que je venais chercher. Service moyen, rien de particulier à signaler.",neutral
+444,20,4,"Rendez-vous respecté, très satisfait.",positive
+445,20,4,"Consultation très professionnelle, je recommande.",positive
+446,20,4,"Rendez-vous respecté, très satisfait. Il a pris le temps de bien m'examiner.",positive
+447,20,3,"Médecin compétent mais un peu pressé. Consultation correcte, sans plus.",neutral
+448,20,3,"Consultation correcte, sans plus.",neutral
+449,20,4,Très bon accueil et explications claires.,positive
+450,20,4,Très bon accueil et explications claires.,positive
+451,20,2,Cabinet sale et mal organisé.,negative
+452,20,5,"Excellent médecin, très à l'écoute. Consultation très professionnelle, je recommande.",positive
+453,20,5,Cabinet propre et personnel agréable.,positive
+454,20,4,"Rendez-vous respecté, très satisfait.",positive
+456,20,3,Médecin compétent mais un peu pressé.,neutral
+457,20,5,Il a pris le temps de bien m'examiner. Cabinet propre et personnel agréable.,positive
+458,20,3,"Le prix est correct, l'attente un peu longue. Consultation correcte, sans plus.",neutral
+459,20,2,Accueil désagréable à la réception.,negative
+460,20,3,"Service moyen, rien de particulier à signaler.",neutral
+461,20,3,"Service moyen, rien de particulier à signaler.",neutral
+462,20,4,Très bon accueil et explications claires.,positive
+463,20,5,Il a pris le temps de bien m'examiner. Très bon accueil et explications claires.,positive
+464,20,5,"Excellent médecin, très à l'écoute.",positive
+465,20,3,"Service moyen, rien de particulier à signaler. Ça va, j'ai eu ce que je venais chercher.",neutral
+466,20,4,Il a pris le temps de bien m'examiner.,positive
+467,20,5,Très bon accueil et explications claires.,positive
+468,20,4,Cabinet propre et personnel agréable.,positive
+469,20,4,Il a pris le temps de bien m'examiner.,positive
+470,20,3,"Le prix est correct, l'attente un peu longue.",neutral
+471,20,5,Médecin sympathique et compétent.,positive
+472,20,2,Accueil désagréable à la réception. Prix trop élevé pour la qualité du service.,negative
+473,20,4,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+474,20,2,Prix trop élevé pour la qualité du service.,negative
+475,20,4,Très bon accueil et explications claires.,positive
+476,20,3,"Consultation correcte, sans plus. Service moyen, rien de particulier à signaler.",neutral
+477,20,4,Médecin sympathique et compétent.,positive
+478,20,4,"Consultation très professionnelle, je recommande. Il a pris le temps de bien m'examiner.",positive
+479,21,4,"Très bon accueil et explications claires. Consultation très professionnelle, je recommande.",positive
+480,21,3,Médecin compétent mais un peu pressé.,neutral
+481,21,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+482,21,4,"Excellent médecin, très à l'écoute.",positive
+483,21,4,"Consultation très professionnelle, je recommande.",positive
+484,21,3,"Service moyen, rien de particulier à signaler.",neutral
+485,21,4,"Consultation très professionnelle, je recommande.",positive
+486,21,1,Accueil désagréable à la réception.,negative
+487,21,5,"Consultation très professionnelle, je recommande. Médecin sympathique et compétent.",positive
+488,21,4,Cabinet propre et personnel agréable.,positive
+489,21,2,"Consultation très rapide, je n'ai rien compris.",negative
+490,21,3,Médecin compétent mais un peu pressé.,neutral
+491,21,2,Accueil désagréable à la réception.,negative
+492,21,1,Accueil désagréable à la réception.,negative
+493,21,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+494,21,4,Cabinet propre et personnel agréable.,positive
+495,21,4,"Excellent médecin, très à l'écoute.",positive
+496,21,4,Il a pris le temps de bien m'examiner.,positive
+497,21,5,"Très bon accueil et explications claires. Consultation très professionnelle, je recommande.",positive
+499,21,5,"Excellent médecin, très à l'écoute. Rendez-vous respecté, très satisfait.",positive
+500,21,4,Il a pris le temps de bien m'examiner.,positive
+501,21,3,Médecin compétent mais un peu pressé.,neutral
+502,21,3,"Le prix est correct, l'attente un peu longue. Médecin compétent mais un peu pressé.",neutral
+503,21,2,Cabinet sale et mal organisé.,negative
+505,21,3,"Le prix est correct, l'attente un peu longue. Consultation correcte, sans plus.",neutral
+506,21,4,"Rendez-vous respecté, très satisfait.",positive
+507,21,4,"Consultation très professionnelle, je recommande.",positive
+508,21,2,"Consultation très rapide, je n'ai rien compris. Médecin peu aimable, je ne reviendrai pas.",negative
+509,21,2,Accueil désagréable à la réception.,negative
+510,21,2,"Médecin peu aimable, je ne reviendrai pas. Cabinet sale et mal organisé.",negative
+511,21,4,Il a pris le temps de bien m'examiner.,positive
+512,22,5,"Consultation très professionnelle, je recommande.",positive
+513,22,3,"Ça va, j'ai eu ce que je venais chercher. Consultation correcte, sans plus.",neutral
+514,22,4,Il a pris le temps de bien m'examiner. Cabinet propre et personnel agréable.,positive
+515,22,4,Médecin sympathique et compétent.,positive
+516,22,5,Il a pris le temps de bien m'examiner. Très bon accueil et explications claires.,positive
+517,22,3,"Service moyen, rien de particulier à signaler.",neutral
+518,22,4,Il a pris le temps de bien m'examiner.,positive
+519,22,5,Cabinet propre et personnel agréable.,positive
+520,22,5,"Excellent médecin, très à l'écoute.",positive
+521,22,5,"Consultation très professionnelle, je recommande. Très bon accueil et explications claires.",positive
+522,22,3,"Service moyen, rien de particulier à signaler. Médecin compétent mais un peu pressé.",neutral
+523,22,5,Très bon accueil et explications claires.,positive
+524,22,4,Très bon accueil et explications claires. Il a pris le temps de bien m'examiner.,positive
+525,22,4,"Excellent médecin, très à l'écoute. Médecin sympathique et compétent.",positive
+526,22,4,Très bon accueil et explications claires. Médecin sympathique et compétent.,positive
+527,22,3,"Le prix est correct, l'attente un peu longue. Médecin compétent mais un peu pressé.",neutral
+528,22,5,Il a pris le temps de bien m'examiner.,positive
+529,22,5,Cabinet propre et personnel agréable.,positive
+530,22,5,"Consultation très professionnelle, je recommande. Rendez-vous respecté, très satisfait.",positive
+531,22,5,"Rendez-vous respecté, très satisfait. Il a pris le temps de bien m'examiner.",positive
+532,22,4,Très bon accueil et explications claires. Il a pris le temps de bien m'examiner.,positive
+533,22,5,"Consultation très professionnelle, je recommande.",positive
+534,22,5,"Rendez-vous respecté, très satisfait.",positive
+535,22,4,"Rendez-vous respecté, très satisfait.",positive
+536,22,2,Cabinet sale et mal organisé. Rendez-vous en retard de presque deux heures.,negative
+537,22,5,"Consultation très professionnelle, je recommande.",positive
+538,22,5,"Rendez-vous respecté, très satisfait.",positive
+539,22,4,Médecin sympathique et compétent. Il a pris le temps de bien m'examiner.,positive
+541,22,3,Médecin compétent mais un peu pressé.,neutral
+543,22,5,Médecin sympathique et compétent.,positive
+544,22,5,Médecin sympathique et compétent.,positive
+545,22,4,Cabinet propre et personnel agréable.,positive
+546,22,5,Médecin sympathique et compétent.,positive
+547,23,4,"Rendez-vous respecté, très satisfait. Consultation très professionnelle, je recommande.",positive
+548,23,2,Cabinet sale et mal organisé.,negative
+549,23,4,"Rendez-vous respecté, très satisfait. Cabinet propre et personnel agréable.",positive
+550,23,2,Rendez-vous en retard de presque deux heures.,negative
+551,23,5,Cabinet propre et personnel agréable. Médecin sympathique et compétent.,positive
+552,23,3,"Médecin compétent mais un peu pressé. Ça va, j'ai eu ce que je venais chercher.",neutral
+553,23,4,Médecin sympathique et compétent. Très bon accueil et explications claires.,positive
+554,23,3,"Le prix est correct, l'attente un peu longue.",neutral
+555,23,3,Médecin compétent mais un peu pressé.,neutral
+556,23,3,"Médecin compétent mais un peu pressé. Ça va, j'ai eu ce que je venais chercher.",neutral
+557,23,4,"Consultation très professionnelle, je recommande.",positive
+558,23,3,"Consultation correcte, sans plus.",neutral
+559,23,4,Cabinet propre et personnel agréable.,positive
+560,23,3,"Consultation correcte, sans plus. Le prix est correct, l'attente un peu longue.",neutral
+561,23,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+562,23,4,"Il a pris le temps de bien m'examiner. Consultation très professionnelle, je recommande.",positive
+563,23,4,"Rendez-vous respecté, très satisfait.",positive
+564,23,3,"Ça va, j'ai eu ce que je venais chercher. Consultation correcte, sans plus.",neutral
+565,23,4,"Consultation très professionnelle, je recommande. Excellent médecin, très à l'écoute.",positive
+566,23,5,"Excellent médecin, très à l'écoute. Consultation très professionnelle, je recommande.",positive
+567,23,3,"Le prix est correct, l'attente un peu longue.",neutral
+568,23,3,"Service moyen, rien de particulier à signaler.",neutral
+569,23,3,"Service moyen, rien de particulier à signaler.",neutral
+570,23,3,"Service moyen, rien de particulier à signaler.",neutral
+571,23,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+572,23,4,"Consultation très professionnelle, je recommande. Il a pris le temps de bien m'examiner.",positive
+573,24,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+574,24,4,Cabinet propre et personnel agréable.,positive
+575,24,4,Il a pris le temps de bien m'examiner.,positive
+576,24,4,"Consultation très professionnelle, je recommande. Rendez-vous respecté, très satisfait.",positive
+577,24,5,Très bon accueil et explications claires.,positive
+578,24,5,Très bon accueil et explications claires.,positive
+579,24,5,Cabinet propre et personnel agréable.,positive
+580,24,4,Très bon accueil et explications claires. Il a pris le temps de bien m'examiner.,positive
+582,24,5,Médecin sympathique et compétent.,positive
+583,24,4,Très bon accueil et explications claires.,positive
+584,24,3,"Service moyen, rien de particulier à signaler.",neutral
+585,24,5,Très bon accueil et explications claires.,positive
+586,25,5,Cabinet propre et personnel agréable. Médecin sympathique et compétent.,positive
+587,25,2,Accueil désagréable à la réception.,negative
+588,25,4,Très bon accueil et explications claires.,positive
+589,25,2,"Accueil désagréable à la réception. Consultation très rapide, je n'ai rien compris.",negative
+590,25,2,"Médecin peu aimable, je ne reviendrai pas. Prix trop élevé pour la qualité du service.",negative
+591,25,4,Très bon accueil et explications claires.,positive
+592,25,4,"Consultation très professionnelle, je recommande. Cabinet propre et personnel agréable.",positive
+593,25,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+594,25,4,"Consultation très professionnelle, je recommande.",positive
+595,25,3,"Médecin compétent mais un peu pressé. Ça va, j'ai eu ce que je venais chercher.",neutral
+596,25,4,"Rendez-vous respecté, très satisfait.",positive
+597,25,5,Très bon accueil et explications claires.,positive
+598,25,2,"Cabinet sale et mal organisé. Médecin peu aimable, je ne reviendrai pas.",negative
+599,25,4,Cabinet propre et personnel agréable.,positive
+600,25,5,Cabinet propre et personnel agréable.,positive
+602,25,5,"Rendez-vous respecté, très satisfait.",positive
+603,25,3,Médecin compétent mais un peu pressé.,neutral
+604,25,5,Médecin sympathique et compétent.,positive
+605,25,4,Cabinet propre et personnel agréable. Il a pris le temps de bien m'examiner.,positive
+606,25,3,"Le prix est correct, l'attente un peu longue.",neutral
+607,25,4,Très bon accueil et explications claires.,positive
+608,25,4,Cabinet propre et personnel agréable.,positive
+609,25,3,"Le prix est correct, l'attente un peu longue. Médecin compétent mais un peu pressé.",neutral
+610,25,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+611,25,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+612,25,3,"Le prix est correct, l'attente un peu longue. Consultation correcte, sans plus.",neutral
+613,25,4,"Consultation très professionnelle, je recommande. Il a pris le temps de bien m'examiner.",positive
+614,26,2,Cabinet sale et mal organisé.,negative
+615,26,3,"Consultation correcte, sans plus.",neutral
+616,26,3,"Le prix est correct, l'attente un peu longue. Médecin compétent mais un peu pressé.",neutral
+617,26,4,"Cabinet propre et personnel agréable. Rendez-vous respecté, très satisfait.",positive
+618,26,2,Prix trop élevé pour la qualité du service.,negative
+619,26,3,"Ça va, j'ai eu ce que je venais chercher. Le prix est correct, l'attente un peu longue.",neutral
+620,26,2,Prix trop élevé pour la qualité du service.,negative
+621,27,5,Très bon accueil et explications claires.,positive
+622,27,5,"Il a pris le temps de bien m'examiner. Consultation très professionnelle, je recommande.",positive
+623,27,5,Très bon accueil et explications claires. Il a pris le temps de bien m'examiner.,positive
+624,27,3,"Service moyen, rien de particulier à signaler.",neutral
+625,27,5,Cabinet propre et personnel agréable.,positive
+626,27,5,"Excellent médecin, très à l'écoute.",positive
+627,27,4,"Excellent médecin, très à l'écoute. Médecin sympathique et compétent.",positive
+628,27,4,"Excellent médecin, très à l'écoute.",positive
+629,27,5,"Excellent médecin, très à l'écoute.",positive
+630,27,4,"Consultation très professionnelle, je recommande. Cabinet propre et personnel agréable.",positive
+631,27,5,"Rendez-vous respecté, très satisfait.",positive
+632,27,4,Très bon accueil et explications claires.,positive
+633,27,4,"Excellent médecin, très à l'écoute.",positive
+634,27,4,"Consultation très professionnelle, je recommande. Cabinet propre et personnel agréable.",positive
+635,27,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+636,27,4,Cabinet propre et personnel agréable.,positive
+637,27,5,Cabinet propre et personnel agréable. Il a pris le temps de bien m'examiner.,positive
+638,27,5,"Consultation très professionnelle, je recommande.",positive
+639,27,5,"Il a pris le temps de bien m'examiner. Rendez-vous respecté, très satisfait.",positive
+640,27,4,"Rendez-vous respecté, très satisfait.",positive
+641,27,5,Médecin sympathique et compétent.,positive
+642,27,4,"Consultation très professionnelle, je recommande.",positive
+643,27,4,"Rendez-vous respecté, très satisfait.",positive
+644,27,4,"Rendez-vous respecté, très satisfait. Très bon accueil et explications claires.",positive
+645,27,4,"Cabinet propre et personnel agréable. Excellent médecin, très à l'écoute.",positive
+646,27,3,"Le prix est correct, l'attente un peu longue. Médecin compétent mais un peu pressé.",neutral
+647,27,4,"Excellent médecin, très à l'écoute.",positive
+648,27,4,Médecin sympathique et compétent.,positive
+649,27,5,Très bon accueil et explications claires.,positive
+650,27,4,Il a pris le temps de bien m'examiner.,positive
+651,27,5,Très bon accueil et explications claires.,positive
+652,27,5,"Consultation très professionnelle, je recommande.",positive
+653,27,4,"Excellent médecin, très à l'écoute. Médecin sympathique et compétent.",positive
+654,27,4,"Consultation très professionnelle, je recommande. Cabinet propre et personnel agréable.",positive
+655,27,5,Médecin sympathique et compétent.,positive
+656,27,5,Très bon accueil et explications claires. Cabinet propre et personnel agréable.,positive
+657,28,1,Prix trop élevé pour la qualité du service.,negative
+659,28,3,Médecin compétent mais un peu pressé.,neutral
+660,28,3,Médecin compétent mais un peu pressé.,neutral
+661,28,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+662,28,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+663,28,1,"Beaucoup trop d'attente, plus d'une heure.",negative
+664,28,3,"Le prix est correct, l'attente un peu longue.",neutral
+665,28,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+666,28,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+667,28,5,Il a pris le temps de bien m'examiner.,positive
+668,28,3,"Consultation correcte, sans plus. Ça va, j'ai eu ce que je venais chercher.",neutral
+669,28,4,"Médecin sympathique et compétent. Excellent médecin, très à l'écoute.",positive
+670,28,4,"Très bon accueil et explications claires. Excellent médecin, très à l'écoute.",positive
+671,28,4,Très bon accueil et explications claires.,positive
+672,28,3,"Le prix est correct, l'attente un peu longue. Ça va, j'ai eu ce que je venais chercher.",neutral
+674,28,3,"Consultation correcte, sans plus.",neutral
+675,28,2,Rendez-vous en retard de presque deux heures.,negative
+676,28,1,"Médecin peu aimable, je ne reviendrai pas.",negative
+677,28,3,"Service moyen, rien de particulier à signaler.",neutral
+678,28,2,Cabinet sale et mal organisé.,negative
+679,28,2,"Prix trop élevé pour la qualité du service. Médecin peu aimable, je ne reviendrai pas.",negative
+680,28,3,"Service moyen, rien de particulier à signaler.",neutral
+681,28,3,Médecin compétent mais un peu pressé.,neutral
+682,28,3,"Service moyen, rien de particulier à signaler.",neutral
+683,28,4,Médecin sympathique et compétent.,positive
+684,28,1,"Beaucoup trop d'attente, plus d'une heure.",negative
+685,28,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+686,29,2,"Beaucoup trop d'attente, plus d'une heure. Rendez-vous en retard de presque deux heures.",negative
+687,29,4,"Consultation très professionnelle, je recommande.",positive
+688,29,3,Médecin compétent mais un peu pressé.,neutral
+689,29,2,Prix trop élevé pour la qualité du service.,negative
+690,29,5,Très bon accueil et explications claires.,positive
+691,29,3,"Consultation correcte, sans plus. Service moyen, rien de particulier à signaler.",neutral
+692,29,3,"Le prix est correct, l'attente un peu longue.",neutral
+693,29,3,"Médecin compétent mais un peu pressé. Consultation correcte, sans plus.",neutral
+694,29,2,"Consultation très rapide, je n'ai rien compris. Médecin peu aimable, je ne reviendrai pas.",negative
+695,29,3,Médecin compétent mais un peu pressé.,neutral
+696,29,3,"Consultation correcte, sans plus.",neutral
+697,29,3,"Médecin compétent mais un peu pressé. Consultation correcte, sans plus.",neutral
+698,29,2,"Consultation très rapide, je n'ai rien compris.",negative
+699,29,4,Il a pris le temps de bien m'examiner.,positive
+700,29,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+701,29,4,Médecin sympathique et compétent.,positive
+702,29,3,"Consultation correcte, sans plus.",neutral
+703,29,4,"Très bon accueil et explications claires. Excellent médecin, très à l'écoute.",positive
+704,29,2,Rendez-vous en retard de presque deux heures.,negative
+705,29,4,"Excellent médecin, très à l'écoute.",positive
+706,29,4,"Excellent médecin, très à l'écoute.",positive
+707,29,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+708,29,3,"Le prix est correct, l'attente un peu longue. Ça va, j'ai eu ce que je venais chercher.",neutral
+709,29,4,Médecin sympathique et compétent.,positive
+710,29,4,"Rendez-vous respecté, très satisfait.",positive
+712,29,4,"Rendez-vous respecté, très satisfait. Cabinet propre et personnel agréable.",positive
+713,29,3,"Service moyen, rien de particulier à signaler. Médecin compétent mais un peu pressé.",neutral
+714,29,4,Très bon accueil et explications claires.,positive
+715,29,3,"Service moyen, rien de particulier à signaler.",neutral
+716,29,3,"Service moyen, rien de particulier à signaler.",neutral
+717,30,4,"Rendez-vous respecté, très satisfait. Il a pris le temps de bien m'examiner.",positive
+718,30,5,Très bon accueil et explications claires.,positive
+719,30,5,Médecin sympathique et compétent.,positive
+720,30,5,"Consultation très professionnelle, je recommande.",positive
+722,30,5,"Excellent médecin, très à l'écoute. Cabinet propre et personnel agréable.",positive
+723,30,4,Très bon accueil et explications claires.,positive
+724,30,4,Médecin sympathique et compétent.,positive
+725,30,5,"Rendez-vous respecté, très satisfait. Excellent médecin, très à l'écoute.",positive
+726,30,5,Cabinet propre et personnel agréable.,positive
+727,30,4,Cabinet propre et personnel agréable.,positive
+728,30,5,"Excellent médecin, très à l'écoute.",positive
+729,30,5,"Il a pris le temps de bien m'examiner. Rendez-vous respecté, très satisfait.",positive
+730,30,5,Cabinet propre et personnel agréable.,positive
+731,30,4,"Rendez-vous respecté, très satisfait.",positive
+732,30,3,"Le prix est correct, l'attente un peu longue. Médecin compétent mais un peu pressé.",neutral
+733,30,5,"Rendez-vous respecté, très satisfait.",positive
+734,30,5,"Consultation très professionnelle, je recommande. Excellent médecin, très à l'écoute.",positive
+735,30,5,Cabinet propre et personnel agréable.,positive
+736,30,3,"Le prix est correct, l'attente un peu longue.",neutral
+737,30,4,"Rendez-vous respecté, très satisfait. Il a pris le temps de bien m'examiner.",positive
+738,30,5,Médecin sympathique et compétent.,positive
+739,31,2,"Beaucoup trop d'attente, plus d'une heure. Prix trop élevé pour la qualité du service.",negative
+740,31,2,"Consultation très rapide, je n'ai rien compris. Médecin peu aimable, je ne reviendrai pas.",negative
+741,31,3,"Le prix est correct, l'attente un peu longue.",neutral
+742,31,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+743,31,4,Il a pris le temps de bien m'examiner.,positive
+744,31,3,"Consultation correcte, sans plus.",neutral
+745,31,4,"Rendez-vous respecté, très satisfait.",positive
+746,31,4,Très bon accueil et explications claires.,positive
+747,31,5,"Rendez-vous respecté, très satisfait.",positive
+748,31,3,"Le prix est correct, l'attente un peu longue.",neutral
+749,31,3,"Le prix est correct, l'attente un peu longue.",neutral
+750,31,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+751,31,3,"Le prix est correct, l'attente un peu longue.",neutral
+752,31,3,"Consultation correcte, sans plus. Le prix est correct, l'attente un peu longue.",neutral
+753,31,5,Il a pris le temps de bien m'examiner.,positive
+754,31,2,Prix trop élevé pour la qualité du service.,negative
+755,31,5,"Médecin sympathique et compétent. Consultation très professionnelle, je recommande.",positive
+756,31,3,"Le prix est correct, l'attente un peu longue. Ça va, j'ai eu ce que je venais chercher.",neutral
+757,31,3,"Consultation correcte, sans plus.",neutral
+758,31,2,Rendez-vous en retard de presque deux heures. Accueil désagréable à la réception.,negative
+759,31,3,Médecin compétent mais un peu pressé.,neutral
+760,31,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+761,31,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+762,31,4,"Consultation très professionnelle, je recommande.",positive
+763,31,2,Accueil désagréable à la réception.,negative
+764,31,3,Médecin compétent mais un peu pressé.,neutral
+765,31,1,"Prix trop élevé pour la qualité du service. Consultation très rapide, je n'ai rien compris.",negative
+766,31,3,Médecin compétent mais un peu pressé.,neutral
+768,31,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+769,31,4,"Rendez-vous respecté, très satisfait.",positive
+770,31,4,"Excellent médecin, très à l'écoute. Très bon accueil et explications claires.",positive
+771,31,2,"Rendez-vous en retard de presque deux heures. Beaucoup trop d'attente, plus d'une heure.",negative
+772,31,1,Prix trop élevé pour la qualité du service.,negative
+773,31,3,"Médecin compétent mais un peu pressé. Ça va, j'ai eu ce que je venais chercher.",neutral
+774,32,4,Cabinet propre et personnel agréable.,positive
+775,32,4,"Cabinet propre et personnel agréable. Excellent médecin, très à l'écoute.",positive
+776,32,5,Très bon accueil et explications claires. Il a pris le temps de bien m'examiner.,positive
+777,32,5,"Excellent médecin, très à l'écoute.",positive
+778,32,3,"Consultation correcte, sans plus. Service moyen, rien de particulier à signaler.",neutral
+779,32,3,"Consultation correcte, sans plus.",neutral
+780,32,1,Accueil désagréable à la réception.,negative
+781,32,3,"Service moyen, rien de particulier à signaler.",neutral
+782,33,4,"Rendez-vous respecté, très satisfait.",positive
+783,33,4,Médecin sympathique et compétent.,positive
+784,33,4,Très bon accueil et explications claires.,positive
+785,33,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+786,33,4,Médecin sympathique et compétent.,positive
+787,33,5,"Cabinet propre et personnel agréable. Consultation très professionnelle, je recommande.",positive
+788,33,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+789,33,5,"Consultation très professionnelle, je recommande. Très bon accueil et explications claires.",positive
+790,33,3,"Le prix est correct, l'attente un peu longue. Médecin compétent mais un peu pressé.",neutral
+791,33,4,"Consultation très professionnelle, je recommande. Médecin sympathique et compétent.",positive
+792,33,5,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+793,33,5,Il a pris le temps de bien m'examiner.,positive
+794,33,4,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+795,33,4,"Consultation très professionnelle, je recommande. Rendez-vous respecté, très satisfait.",positive
+796,33,3,"Service moyen, rien de particulier à signaler.",neutral
+797,33,4,"Excellent médecin, très à l'écoute.",positive
+798,33,4,Très bon accueil et explications claires.,positive
+799,33,2,Rendez-vous en retard de presque deux heures.,negative
+800,33,4,"Rendez-vous respecté, très satisfait.",positive
+801,33,5,Médecin sympathique et compétent.,positive
+802,33,3,"Consultation correcte, sans plus.",neutral
+803,33,5,"Très bon accueil et explications claires. Rendez-vous respecté, très satisfait.",positive
+804,33,3,"Service moyen, rien de particulier à signaler.",neutral
+805,33,3,"Consultation correcte, sans plus.",neutral
+806,33,5,"Consultation très professionnelle, je recommande.",positive
+807,33,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+808,33,4,"Excellent médecin, très à l'écoute.",positive
+810,33,3,"Le prix est correct, l'attente un peu longue.",neutral
+811,33,3,"Consultation correcte, sans plus.",neutral
+812,33,5,Cabinet propre et personnel agréable.,positive
+813,33,2,"Accueil désagréable à la réception. Beaucoup trop d'attente, plus d'une heure.",negative
+814,33,4,Médecin sympathique et compétent.,positive
+815,33,3,"Service moyen, rien de particulier à signaler.",neutral
+816,33,3,"Le prix est correct, l'attente un peu longue.",neutral
+817,33,5,Cabinet propre et personnel agréable.,positive
+818,33,3,"Le prix est correct, l'attente un peu longue.",neutral
+819,34,3,"Consultation correcte, sans plus.",neutral
+820,34,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+821,34,3,"Médecin compétent mais un peu pressé. Le prix est correct, l'attente un peu longue.",neutral
+822,34,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+823,34,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+824,34,5,Il a pris le temps de bien m'examiner.,positive
+825,34,4,"Rendez-vous respecté, très satisfait.",positive
+826,34,4,"Il a pris le temps de bien m'examiner. Excellent médecin, très à l'écoute.",positive
+827,34,5,"Rendez-vous respecté, très satisfait.",positive
+828,34,5,"Rendez-vous respecté, très satisfait. Consultation très professionnelle, je recommande.",positive
+829,34,3,Médecin compétent mais un peu pressé.,neutral
+830,34,4,Il a pris le temps de bien m'examiner. Cabinet propre et personnel agréable.,positive
+831,34,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+832,34,5,"Rendez-vous respecté, très satisfait.",positive
+833,34,4,Cabinet propre et personnel agréable.,positive
+834,34,5,Très bon accueil et explications claires.,positive
+835,34,5,"Consultation très professionnelle, je recommande.",positive
+836,34,5,"Excellent médecin, très à l'écoute.",positive
+837,34,4,Il a pris le temps de bien m'examiner.,positive
+838,34,3,"Consultation correcte, sans plus.",neutral
+841,34,3,"Médecin compétent mais un peu pressé. Consultation correcte, sans plus.",neutral
+842,34,3,"Médecin compétent mais un peu pressé. Service moyen, rien de particulier à signaler.",neutral
+843,34,5,"Consultation très professionnelle, je recommande.",positive
+844,34,4,"Médecin sympathique et compétent. Rendez-vous respecté, très satisfait.",positive
+845,34,4,"Excellent médecin, très à l'écoute.",positive
+846,35,2,Prix trop élevé pour la qualité du service.,negative
+847,35,4,Cabinet propre et personnel agréable.,positive
+848,35,3,"Consultation correcte, sans plus.",neutral
+849,35,4,Il a pris le temps de bien m'examiner.,positive
+850,35,4,"Excellent médecin, très à l'écoute.",positive
+851,35,4,Très bon accueil et explications claires.,positive
+852,35,3,"Le prix est correct, l'attente un peu longue. Médecin compétent mais un peu pressé.",neutral
+853,35,5,"Consultation très professionnelle, je recommande.",positive
+854,35,2,Accueil désagréable à la réception. Prix trop élevé pour la qualité du service.,negative
+855,35,5,"Cabinet propre et personnel agréable. Consultation très professionnelle, je recommande.",positive
+856,35,5,Très bon accueil et explications claires.,positive
+857,35,5,"Excellent médecin, très à l'écoute.",positive
+858,35,5,Il a pris le temps de bien m'examiner.,positive
+859,35,4,Il a pris le temps de bien m'examiner.,positive
+860,35,5,"Excellent médecin, très à l'écoute. Cabinet propre et personnel agréable.",positive
+861,35,4,Très bon accueil et explications claires.,positive
+862,35,5,"Consultation très professionnelle, je recommande.",positive
+863,35,5,"Cabinet propre et personnel agréable. Excellent médecin, très à l'écoute.",positive
+864,35,4,"Rendez-vous respecté, très satisfait.",positive
+865,35,5,"Il a pris le temps de bien m'examiner. Consultation très professionnelle, je recommande.",positive
+866,35,4,"Rendez-vous respecté, très satisfait. Médecin sympathique et compétent.",positive
+867,35,5,"Excellent médecin, très à l'écoute.",positive
+868,35,4,Médecin sympathique et compétent.,positive
+869,35,5,"Il a pris le temps de bien m'examiner. Rendez-vous respecté, très satisfait.",positive
+870,35,5,"Rendez-vous respecté, très satisfait.",positive
+871,35,4,"Rendez-vous respecté, très satisfait.",positive
+872,35,5,Cabinet propre et personnel agréable. Il a pris le temps de bien m'examiner.,positive
+873,35,4,Très bon accueil et explications claires. Cabinet propre et personnel agréable.,positive
+874,35,5,"Excellent médecin, très à l'écoute.",positive
+875,35,4,Médecin sympathique et compétent.,positive
+876,35,4,"Excellent médecin, très à l'écoute.",positive
+877,35,5,"Consultation très professionnelle, je recommande.",positive
+878,35,5,"Rendez-vous respecté, très satisfait.",positive
+879,35,5,"Rendez-vous respecté, très satisfait. Très bon accueil et explications claires.",positive
+880,35,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+881,35,4,Médecin sympathique et compétent. Très bon accueil et explications claires.,positive
+882,35,5,"Rendez-vous respecté, très satisfait.",positive
+883,36,5,Cabinet propre et personnel agréable.,positive
+884,36,4,"Très bon accueil et explications claires. Consultation très professionnelle, je recommande.",positive
+885,36,4,Il a pris le temps de bien m'examiner.,positive
+886,36,5,"Rendez-vous respecté, très satisfait.",positive
+887,36,5,Cabinet propre et personnel agréable.,positive
+888,36,5,"Rendez-vous respecté, très satisfait.",positive
+889,36,4,Il a pris le temps de bien m'examiner.,positive
+890,37,2,Cabinet sale et mal organisé.,negative
+891,37,5,"Consultation très professionnelle, je recommande.",positive
+892,37,4,"Médecin sympathique et compétent. Consultation très professionnelle, je recommande.",positive
+893,37,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+894,37,5,"Consultation très professionnelle, je recommande.",positive
+895,37,3,"Service moyen, rien de particulier à signaler. Le prix est correct, l'attente un peu longue.",neutral
+896,37,2,Prix trop élevé pour la qualité du service.,negative
+897,37,3,Médecin compétent mais un peu pressé.,neutral
+899,37,4,Il a pris le temps de bien m'examiner.,positive
+900,37,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+901,37,5,"Consultation très professionnelle, je recommande.",positive
+902,37,3,"Consultation correcte, sans plus.",neutral
+903,38,3,"Le prix est correct, l'attente un peu longue.",neutral
+904,38,2,"Consultation très rapide, je n'ai rien compris.",negative
+905,38,4,Médecin sympathique et compétent.,positive
+906,38,4,Il a pris le temps de bien m'examiner. Cabinet propre et personnel agréable.,positive
+907,38,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+908,38,4,"Rendez-vous respecté, très satisfait.",positive
+909,38,2,Accueil désagréable à la réception.,negative
+910,38,3,"Le prix est correct, l'attente un peu longue. Médecin compétent mais un peu pressé.",neutral
+911,38,3,"Consultation correcte, sans plus.",neutral
+912,38,2,"Consultation très rapide, je n'ai rien compris. Médecin peu aimable, je ne reviendrai pas.",negative
+913,38,4,"Rendez-vous respecté, très satisfait.",positive
+914,38,3,"Médecin compétent mais un peu pressé. Service moyen, rien de particulier à signaler.",neutral
+915,38,3,"Service moyen, rien de particulier à signaler.",neutral
+916,38,2,"Prix trop élevé pour la qualité du service. Consultation très rapide, je n'ai rien compris.",negative
+917,38,2,Cabinet sale et mal organisé. Prix trop élevé pour la qualité du service.,negative
+918,38,3,"Service moyen, rien de particulier à signaler. Ça va, j'ai eu ce que je venais chercher.",neutral
+919,38,3,"Consultation correcte, sans plus.",neutral
+920,38,3,"Service moyen, rien de particulier à signaler.",neutral
+921,38,3,"Consultation correcte, sans plus.",neutral
+922,38,4,"Très bon accueil et explications claires. Consultation très professionnelle, je recommande.",positive
+923,38,4,Il a pris le temps de bien m'examiner.,positive
+924,38,4,Très bon accueil et explications claires. Il a pris le temps de bien m'examiner.,positive
+925,38,3,"Le prix est correct, l'attente un peu longue. Médecin compétent mais un peu pressé.",neutral
+926,38,4,"Excellent médecin, très à l'écoute.",positive
+927,38,2,Cabinet sale et mal organisé.,negative
+928,38,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+929,38,4,"Rendez-vous respecté, très satisfait.",positive
+930,38,3,"Le prix est correct, l'attente un peu longue. Ça va, j'ai eu ce que je venais chercher.",neutral
+931,38,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+932,38,3,"Consultation correcte, sans plus.",neutral
+933,38,3,"Ça va, j'ai eu ce que je venais chercher. Le prix est correct, l'attente un peu longue.",neutral
+934,39,5,"Rendez-vous respecté, très satisfait.",positive
+935,39,3,"Le prix est correct, l'attente un peu longue.",neutral
+936,39,5,Cabinet propre et personnel agréable. Médecin sympathique et compétent.,positive
+937,39,4,"Excellent médecin, très à l'écoute.",positive
+938,39,5,Médecin sympathique et compétent.,positive
+939,39,4,"Consultation très professionnelle, je recommande.",positive
+940,39,4,Très bon accueil et explications claires.,positive
+941,39,3,Médecin compétent mais un peu pressé.,neutral
+942,39,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+943,39,4,Il a pris le temps de bien m'examiner.,positive
+944,39,4,Il a pris le temps de bien m'examiner.,positive
+945,39,5,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+946,40,1,Prix trop élevé pour la qualité du service.,negative
+947,40,4,"Médecin sympathique et compétent. Excellent médecin, très à l'écoute.",positive
+948,40,3,"Consultation correcte, sans plus. Service moyen, rien de particulier à signaler.",neutral
+949,40,1,"Beaucoup trop d'attente, plus d'une heure. Cabinet sale et mal organisé.",negative
+950,40,2,Prix trop élevé pour la qualité du service.,negative
+951,40,3,"Le prix est correct, l'attente un peu longue. Service moyen, rien de particulier à signaler.",neutral
+952,40,2,Rendez-vous en retard de presque deux heures.,negative
+953,40,4,"Rendez-vous respecté, très satisfait. Cabinet propre et personnel agréable.",positive
+954,40,1,Cabinet sale et mal organisé. Rendez-vous en retard de presque deux heures.,negative
+955,40,3,"Service moyen, rien de particulier à signaler.",neutral
+956,40,3,Médecin compétent mais un peu pressé.,neutral
+957,40,2,Prix trop élevé pour la qualité du service.,negative
+958,40,3,"Consultation correcte, sans plus.",neutral
+959,40,2,Cabinet sale et mal organisé. Prix trop élevé pour la qualité du service.,negative
+960,40,3,"Médecin compétent mais un peu pressé. Le prix est correct, l'attente un peu longue.",neutral
+961,40,3,"Consultation correcte, sans plus.",neutral
+962,40,3,Médecin compétent mais un peu pressé.,neutral
+963,40,4,Très bon accueil et explications claires.,positive
+964,40,2,Accueil désagréable à la réception.,negative
+965,40,3,"Le prix est correct, l'attente un peu longue.",neutral
+966,40,3,"Médecin compétent mais un peu pressé. Service moyen, rien de particulier à signaler.",neutral
+967,40,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+968,40,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+969,40,3,"Le prix est correct, l'attente un peu longue.",neutral
+970,40,3,"Le prix est correct, l'attente un peu longue. Ça va, j'ai eu ce que je venais chercher.",neutral
+971,40,2,"Beaucoup trop d'attente, plus d'une heure. Médecin peu aimable, je ne reviendrai pas.",negative
+972,41,4,"Excellent médecin, très à l'écoute. Consultation très professionnelle, je recommande.",positive
+973,41,5,Médecin sympathique et compétent.,positive
+974,41,2,"Consultation très rapide, je n'ai rien compris. Accueil désagréable à la réception.",negative
+975,41,3,"Ça va, j'ai eu ce que je venais chercher. Consultation correcte, sans plus.",neutral
+976,41,5,"Consultation très professionnelle, je recommande.",positive
+977,41,2,Accueil désagréable à la réception. Rendez-vous en retard de presque deux heures.,negative
+978,41,5,Médecin sympathique et compétent.,positive
+979,41,4,"Consultation très professionnelle, je recommande.",positive
+980,41,4,Médecin sympathique et compétent.,positive
+981,41,4,"Consultation très professionnelle, je recommande.",positive
+982,41,5,Cabinet propre et personnel agréable.,positive
+983,41,3,"Consultation correcte, sans plus.",neutral
+984,41,3,"Service moyen, rien de particulier à signaler.",neutral
+986,41,5,"Consultation très professionnelle, je recommande. Médecin sympathique et compétent.",positive
+987,41,5,"Cabinet propre et personnel agréable. Rendez-vous respecté, très satisfait.",positive
+988,41,4,"Consultation très professionnelle, je recommande. Médecin sympathique et compétent.",positive
+989,41,4,Cabinet propre et personnel agréable.,positive
+990,41,5,Médecin sympathique et compétent.,positive
+991,42,4,Il a pris le temps de bien m'examiner.,positive
+992,42,1,Rendez-vous en retard de presque deux heures. Prix trop élevé pour la qualité du service.,negative
+993,42,1,"Beaucoup trop d'attente, plus d'une heure. Médecin peu aimable, je ne reviendrai pas.",negative
+994,42,2,Rendez-vous en retard de presque deux heures.,negative
+995,42,2,Prix trop élevé pour la qualité du service.,negative
+996,42,4,"Consultation très professionnelle, je recommande.",positive
+997,42,4,"Cabinet propre et personnel agréable. Rendez-vous respecté, très satisfait.",positive
+998,42,3,"Consultation correcte, sans plus.",neutral
+999,42,3,"Consultation correcte, sans plus.",neutral
+1000,42,3,"Service moyen, rien de particulier à signaler. Consultation correcte, sans plus.",neutral
+1001,42,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+1002,42,2,Cabinet sale et mal organisé.,negative
+1003,42,3,"Ça va, j'ai eu ce que je venais chercher. Service moyen, rien de particulier à signaler.",neutral
+1004,42,3,"Consultation correcte, sans plus. Le prix est correct, l'attente un peu longue.",neutral
+1005,42,3,"Consultation correcte, sans plus. Le prix est correct, l'attente un peu longue.",neutral
+1007,42,4,Très bon accueil et explications claires.,positive
+1008,42,5,Cabinet propre et personnel agréable.,positive
+1009,42,3,"Ça va, j'ai eu ce que je venais chercher. Service moyen, rien de particulier à signaler.",neutral
+1011,42,2,"Beaucoup trop d'attente, plus d'une heure. Consultation très rapide, je n'ai rien compris.",negative
+1012,42,2,Prix trop élevé pour la qualité du service.,negative
+1013,42,4,"Rendez-vous respecté, très satisfait.",positive
+1014,42,2,Accueil désagréable à la réception.,negative
+1015,42,2,Cabinet sale et mal organisé. Rendez-vous en retard de presque deux heures.,negative
+1016,42,4,Cabinet propre et personnel agréable. Très bon accueil et explications claires.,positive
+1017,42,1,"Beaucoup trop d'attente, plus d'une heure.",negative
+1018,42,2,"Beaucoup trop d'attente, plus d'une heure. Consultation très rapide, je n'ai rien compris.",negative
+1019,42,3,"Consultation correcte, sans plus. Service moyen, rien de particulier à signaler.",neutral
+1020,42,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+1021,43,4,Cabinet propre et personnel agréable. Très bon accueil et explications claires.,positive
+1022,43,3,Médecin compétent mais un peu pressé.,neutral
+1023,43,1,"Beaucoup trop d'attente, plus d'une heure. Prix trop élevé pour la qualité du service.",negative
+1024,43,3,Médecin compétent mais un peu pressé.,neutral
+1025,43,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+1026,43,3,"Médecin compétent mais un peu pressé. Consultation correcte, sans plus.",neutral
+1027,43,2,"Médecin peu aimable, je ne reviendrai pas.",negative
+1028,43,5,"Rendez-vous respecté, très satisfait. Consultation très professionnelle, je recommande.",positive
+1029,43,3,"Consultation correcte, sans plus.",neutral
+1030,43,3,"Le prix est correct, l'attente un peu longue.",neutral
+1031,43,2,Cabinet sale et mal organisé.,negative
+1032,43,3,"Le prix est correct, l'attente un peu longue.",neutral
+1033,43,5,"Consultation très professionnelle, je recommande.",positive
+1034,43,3,"Le prix est correct, l'attente un peu longue.",neutral
+1035,43,4,"Cabinet propre et personnel agréable. Rendez-vous respecté, très satisfait.",positive
+1036,43,3,Médecin compétent mais un peu pressé.,neutral
+1037,43,4,"Excellent médecin, très à l'écoute.",positive
+1038,43,5,"Consultation très professionnelle, je recommande.",positive
+1039,43,3,"Le prix est correct, l'attente un peu longue.",neutral
+1040,43,4,"Consultation très professionnelle, je recommande. Cabinet propre et personnel agréable.",positive
+1041,43,4,"Rendez-vous respecté, très satisfait.",positive
+1042,43,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+1043,43,1,Rendez-vous en retard de presque deux heures.,negative
+1044,43,3,"Médecin compétent mais un peu pressé. Consultation correcte, sans plus.",neutral
+1045,43,3,Médecin compétent mais un peu pressé.,neutral
+1046,43,4,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+1047,43,4,Très bon accueil et explications claires.,positive
+1048,43,1,"Consultation très rapide, je n'ai rien compris.",negative
+1049,43,4,"Rendez-vous respecté, très satisfait. Consultation très professionnelle, je recommande.",positive
+1050,43,3,Médecin compétent mais un peu pressé.,neutral
+1051,43,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+1052,43,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+1053,43,2,Prix trop élevé pour la qualité du service. Accueil désagréable à la réception.,negative
+1054,43,4,"Consultation très professionnelle, je recommande. Médecin sympathique et compétent.",positive
+1055,43,2,Prix trop élevé pour la qualité du service.,negative
+1056,43,3,"Le prix est correct, l'attente un peu longue. Ça va, j'ai eu ce que je venais chercher.",neutral
+1057,44,3,"Le prix est correct, l'attente un peu longue.",neutral
+1058,44,4,"Consultation très professionnelle, je recommande.",positive
+1059,44,4,Cabinet propre et personnel agréable.,positive
+1060,44,3,"Consultation correcte, sans plus.",neutral
+1061,44,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+1062,44,3,"Service moyen, rien de particulier à signaler. Médecin compétent mais un peu pressé.",neutral
+1063,44,3,"Le prix est correct, l'attente un peu longue.",neutral
+1064,44,3,"Consultation correcte, sans plus.",neutral
+1065,44,3,"Le prix est correct, l'attente un peu longue. Médecin compétent mais un peu pressé.",neutral
+1066,44,2,Rendez-vous en retard de presque deux heures.,negative
+1067,44,3,"Consultation correcte, sans plus.",neutral
+1068,44,4,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+1069,44,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+1070,44,4,Médecin sympathique et compétent.,positive
+1071,44,3,"Consultation correcte, sans plus. Ça va, j'ai eu ce que je venais chercher.",neutral
+1072,44,4,"Rendez-vous respecté, très satisfait.",positive
+1073,44,2,Rendez-vous en retard de presque deux heures.,negative
+1074,44,4,"Excellent médecin, très à l'écoute.",positive
+1075,44,4,"Excellent médecin, très à l'écoute. Médecin sympathique et compétent.",positive
+1076,44,2,"Consultation très rapide, je n'ai rien compris.",negative
+1077,44,5,"Rendez-vous respecté, très satisfait.",positive
+1078,44,2,"Consultation très rapide, je n'ai rien compris.",negative
+1079,44,4,"Excellent médecin, très à l'écoute. Consultation très professionnelle, je recommande.",positive
+1080,44,4,Très bon accueil et explications claires. Il a pris le temps de bien m'examiner.,positive
+1081,44,2,Accueil désagréable à la réception. Rendez-vous en retard de presque deux heures.,negative
+1082,44,5,"Excellent médecin, très à l'écoute.",positive
+1083,44,3,"Service moyen, rien de particulier à signaler. Médecin compétent mais un peu pressé.",neutral
+1084,44,3,Médecin compétent mais un peu pressé.,neutral
+1085,44,3,"Service moyen, rien de particulier à signaler.",neutral
+1086,45,4,"Excellent médecin, très à l'écoute.",positive
+1087,45,4,Médecin sympathique et compétent.,positive
+1088,45,4,"Rendez-vous respecté, très satisfait.",positive
+1089,45,3,"Consultation correcte, sans plus. Médecin compétent mais un peu pressé.",neutral
+1090,45,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+1091,45,5,"Excellent médecin, très à l'écoute.",positive
+1092,45,5,Cabinet propre et personnel agréable.,positive
+1093,45,3,"Consultation correcte, sans plus. Ça va, j'ai eu ce que je venais chercher.",neutral
+1094,45,4,"Consultation très professionnelle, je recommande. Cabinet propre et personnel agréable.",positive
+1095,45,4,Il a pris le temps de bien m'examiner.,positive
+1096,45,4,Il a pris le temps de bien m'examiner.,positive
+1097,45,4,Il a pris le temps de bien m'examiner.,positive
+1098,45,3,"Consultation correcte, sans plus. Service moyen, rien de particulier à signaler.",neutral
+1099,45,4,"Médecin sympathique et compétent. Excellent médecin, très à l'écoute.",positive
+1100,45,4,"Très bon accueil et explications claires. Rendez-vous respecté, très satisfait.",positive
+1101,45,4,Il a pris le temps de bien m'examiner.,positive
+1102,45,3,Médecin compétent mais un peu pressé.,neutral
+1103,45,3,"Consultation correcte, sans plus.",neutral
+1104,45,5,"Excellent médecin, très à l'écoute.",positive
+1105,45,4,Médecin sympathique et compétent.,positive
+1106,45,5,"Très bon accueil et explications claires. Rendez-vous respecté, très satisfait.",positive
+1107,45,4,Très bon accueil et explications claires.,positive
+1108,45,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+1109,45,5,"Médecin sympathique et compétent. Excellent médecin, très à l'écoute.",positive
+1110,45,3,"Le prix est correct, l'attente un peu longue.",neutral
+1111,46,3,Médecin compétent mais un peu pressé.,neutral
+1112,46,2,"Consultation très rapide, je n'ai rien compris.",negative
+1113,46,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+1114,46,4,Très bon accueil et explications claires.,positive
+1115,46,4,Cabinet propre et personnel agréable.,positive
+1116,46,4,"Rendez-vous respecté, très satisfait.",positive
+1117,46,4,"Excellent médecin, très à l'écoute. Consultation très professionnelle, je recommande.",positive
+1118,47,3,"Consultation correcte, sans plus.",neutral
+1119,47,2,Prix trop élevé pour la qualité du service.,negative
+1121,47,5,Il a pris le temps de bien m'examiner.,positive
+1122,47,4,Médecin sympathique et compétent.,positive
+1123,47,1,"Cabinet sale et mal organisé. Beaucoup trop d'attente, plus d'une heure.",negative
+1124,47,2,Rendez-vous en retard de presque deux heures. Cabinet sale et mal organisé.,negative
+1125,47,2,Rendez-vous en retard de presque deux heures. Cabinet sale et mal organisé.,negative
+1126,48,4,Médecin sympathique et compétent.,positive
+1127,48,2,"Beaucoup trop d'attente, plus d'une heure.",negative
+1128,48,4,"Très bon accueil et explications claires. Consultation très professionnelle, je recommande.",positive
+1130,48,3,Médecin compétent mais un peu pressé.,neutral
+1132,48,1,"Médecin peu aimable, je ne reviendrai pas.",negative
+1133,49,5,Cabinet propre et personnel agréable.,positive
+1134,49,4,"Consultation très professionnelle, je recommande. Excellent médecin, très à l'écoute.",positive
+1135,49,5,"Consultation très professionnelle, je recommande.",positive
+1136,49,4,"Très bon accueil et explications claires. Rendez-vous respecté, très satisfait.",positive
+1137,49,5,"Consultation très professionnelle, je recommande.",positive
+1138,49,5,Médecin sympathique et compétent. Il a pris le temps de bien m'examiner.,positive
+1139,49,4,Très bon accueil et explications claires.,positive
+1140,49,5,"Rendez-vous respecté, très satisfait.",positive
+1141,49,4,"Il a pris le temps de bien m'examiner. Rendez-vous respecté, très satisfait.",positive
+1142,49,5,"Excellent médecin, très à l'écoute.",positive
+1143,49,4,Très bon accueil et explications claires.,positive
+1144,49,5,Très bon accueil et explications claires.,positive
+1145,49,5,"Consultation très professionnelle, je recommande.",positive
+1146,49,3,"Médecin compétent mais un peu pressé. Le prix est correct, l'attente un peu longue.",neutral
+1147,49,4,Médecin sympathique et compétent.,positive
+1148,49,5,Médecin sympathique et compétent.,positive
+1150,49,5,Médecin sympathique et compétent.,positive
+1151,49,5,Très bon accueil et explications claires.,positive
+1152,49,5,"Médecin sympathique et compétent. Rendez-vous respecté, très satisfait.",positive
+1153,49,5,Très bon accueil et explications claires.,positive
+1154,49,5,"Rendez-vous respecté, très satisfait.",positive
+1155,49,4,"Rendez-vous respecté, très satisfait.",positive
+1156,49,4,"Rendez-vous respecté, très satisfait. Médecin sympathique et compétent.",positive
+1157,49,5,"Cabinet propre et personnel agréable. Consultation très professionnelle, je recommande.",positive
+1158,49,5,Il a pris le temps de bien m'examiner. Cabinet propre et personnel agréable.,positive
+1159,49,4,"Excellent médecin, très à l'écoute.",positive
+1160,49,5,Très bon accueil et explications claires.,positive
+1161,49,5,Il a pris le temps de bien m'examiner.,positive
+1162,49,4,Médecin sympathique et compétent. Cabinet propre et personnel agréable.,positive
+1163,49,5,Il a pris le temps de bien m'examiner.,positive
+1164,49,5,"Excellent médecin, très à l'écoute.",positive
+1165,49,4,"Très bon accueil et explications claires. Consultation très professionnelle, je recommande.",positive
+1166,49,3,"Consultation correcte, sans plus. Ça va, j'ai eu ce que je venais chercher.",neutral
+1167,49,5,"Consultation très professionnelle, je recommande.",positive
+1168,50,4,Médecin sympathique et compétent.,positive
+1169,50,3,"Consultation correcte, sans plus.",neutral
+1170,50,5,Médecin sympathique et compétent.,positive
+1171,50,4,Il a pris le temps de bien m'examiner.,positive
+1172,50,4,"Consultation très professionnelle, je recommande. Cabinet propre et personnel agréable.",positive
+1173,50,4,Très bon accueil et explications claires.,positive
+1174,50,4,"Excellent médecin, très à l'écoute. Consultation très professionnelle, je recommande.",positive
+1175,50,3,"Consultation correcte, sans plus.",neutral
+1176,50,4,"Excellent médecin, très à l'écoute.",positive
+1177,50,4,Cabinet propre et personnel agréable.,positive
+1178,50,3,"Ça va, j'ai eu ce que je venais chercher. Service moyen, rien de particulier à signaler.",neutral
+1179,50,4,"Consultation très professionnelle, je recommande.",positive
+1180,50,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+1181,50,4,"Excellent médecin, très à l'écoute.",positive
+1182,50,4,Il a pris le temps de bien m'examiner. Médecin sympathique et compétent.,positive
+1183,50,4,Médecin sympathique et compétent.,positive
+1184,50,3,"Médecin compétent mais un peu pressé. Service moyen, rien de particulier à signaler.",neutral
+1186,50,5,Très bon accueil et explications claires.,positive
+1187,50,3,"Le prix est correct, l'attente un peu longue.",neutral
+1188,50,4,Très bon accueil et explications claires.,positive
+1189,50,5,"Consultation très professionnelle, je recommande.",positive
+1190,50,3,"Service moyen, rien de particulier à signaler.",neutral
+1191,50,5,"Consultation très professionnelle, je recommande.",positive
+1192,50,5,Il a pris le temps de bien m'examiner. Très bon accueil et explications claires.,positive
+1193,50,3,"Service moyen, rien de particulier à signaler. Ça va, j'ai eu ce que je venais chercher.",neutral
+1194,50,2,Cabinet sale et mal organisé. Accueil désagréable à la réception.,negative
+1195,50,3,"Ça va, j'ai eu ce que je venais chercher.",neutral
+1196,50,4,Médecin sympathique et compétent.,positive
+1197,50,5,Il a pris le temps de bien m'examiner. Très bon accueil et explications claires.,positive
+1198,50,5,Cabinet propre et personnel agréable.,positive
+1200,50,5,Il a pris le temps de bien m'examiner.,positive
+1201,50,5,"Excellent médecin, très à l'écoute.",positive
+1202,50,4,"Rendez-vous respecté, très satisfait.",positive

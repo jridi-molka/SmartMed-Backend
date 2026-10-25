@@ -1,0 +1,23 @@
+{
+  "doctors": {
+    "doublons": 3,
+    "textes_corriges": 4
+  },
+  "reviews": {
+    "doublons": 20,
+    "note_invalide": 10,
+    "note_manquante": 10,
+    "commentaire_vide": 8,
+    "medecin_inconnu": 6,
+    "textes_corriges": 15,
+    "sentiments_corriges": 8
+  },
+  "waiting_history": {
+    "doublons": 25,
+    "attente_negative": 12,
+    "patients_negatifs": 8,
+    "heure_invalide": 10,
+    "jour_invalide": 5,
+    "valeur_manquante": 15
+  }
+}
