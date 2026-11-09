@@ -26,3 +26,10 @@ def get_current_user(
             detail="User not found",
         )
     return user
+
+def require_role(*roles: str):
+    def checker(user: User = Depends(get_current_user)) -> User:
+        if user.role.value not in roles:
+            raise HTTPException(status_code=403, detail="Forbidden")
+        return user
+    return checker

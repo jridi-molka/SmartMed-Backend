@@ -22,7 +22,7 @@ def test_register_success(client):
     assert r.status_code == 201
     body = r.json()
     assert body["email"] == "sarra@mail.com"
-    assert body["role"] == "Patient"
+    assert body["role"] == "patient"
     assert "password" not in body
     assert "password_hash" not in body
 
@@ -52,7 +52,7 @@ def test_register_short_password(client):
 def test_register_cannot_choose_role(client):
     r = register(client, {**USER, "role": "Admin"})
     assert r.status_code == 201
-    assert r.json()["role"] == "Patient"
+    assert r.json()["role"] == "patient"
 
 
 # ---------- login ----------
@@ -112,8 +112,8 @@ def test_update_password(client):
 
 def test_update_cannot_change_role(client):
     headers = auth_header(client)
-    r = client.put("/users/me", json={"role": "Admin"}, headers=headers)
-    assert r.json()["role"] == "Patient"
+    r = client.put("/users/me", json={"role": "admin"}, headers=headers)
+    assert r.json()["role"] == "patient"
 
 
 def test_logout(client):

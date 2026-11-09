@@ -8,9 +8,9 @@ from app.db.base import Base
 
 
 class UserRole(str, enum.Enum):
-    PATIENT = "Patient"
-    DOCTOR = "Doctor"
-    ADMIN = "Admin"
+    PATIENT = "patient"
+    DOCTOR = "doctor"
+    ADMIN = "admin"
 
 
 class User(Base):
