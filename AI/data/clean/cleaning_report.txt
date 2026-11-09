@@ -1,0 +1,22 @@
+RAPPORT DE NETTOYAGE
+============================================================
+doctors : 53 lignes brutes -> 50 lignes propres
+   - doublons supprimés                                    3   (injectées :   3)  OK
+   - textes corrigés (espaces)                             4   (injectées :   4)  OK
+
+reviews : 1222 lignes brutes -> 1168 lignes propres
+   - doublons supprimés                                   20   (injectées :  20)  OK
+   - notes manquantes supprimées                          10   (injectées :  10)  OK
+   - commentaires vides supprimés                          8   (injectées :   8)  OK
+   - notes hors de 1 à 5 supprimées                       10   (injectées :  10)  OK
+   - avis sur un médecin inexistant supprimés              6   (injectées :   6)  OK
+   - commentaires corrigés (espaces)                      15   (injectées :  15)  OK
+   - sentiments invalides recalculés                       8   (injectées :   8)  OK
+
+waiting_history : 4025 lignes brutes -> 3950 lignes propres
+   - doublons supprimés                                   25   (injectées :  25)  OK
+   - lignes incomplètes supprimées                        15   (injectées :  15)  OK
+   - nombres de patients négatifs supprimés                8   (injectées :   8)  OK
+   - temps d'attente négatifs supprimés                   12   (injectées :  12)  OK
+   - heures impossibles supprimées                        10   (injectées :  10)  OK
+   - jours impossibles supprimés                           5   (injectées :   5)  OK
