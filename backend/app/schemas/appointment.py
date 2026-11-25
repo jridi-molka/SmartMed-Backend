@@ -1,15 +1,26 @@
-from datetime import date
+from datetime import date, time
 
-from pydantic import BaseModel
-
-
-class SlotOut(BaseModel):
-    start_time: str
-    end_time: str
-    available: bool
+from pydantic import BaseModel, ConfigDict
 
 
-class SlotsOut(BaseModel):
-    date: date
+class AppointmentCreate(BaseModel):
     doctor_id: int
-    slots: list[SlotOut]
+    date: date
+    start_time: time
+
+
+class DoctorSummary(BaseModel):
+    id: int
+    name: str
+    specialty: str
+
+
+class AppointmentOut(BaseModel):
+    id: int
+    doctor: DoctorSummary
+    date: date
+    start_time: time
+    end_time: time
+    status: str
+
+    model_config = ConfigDict(from_attributes=True)

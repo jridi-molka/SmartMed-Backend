@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import auth, users, slots
+from app.api.routes import auth, users, slots, appointments
+
 
 app = FastAPI(title="SmartMed API")
 
@@ -15,7 +16,7 @@ app.add_middleware(
 app.include_router(auth.router)
 app.include_router(users.router)
 app.include_router(slots.router)
-
+app.include_router(appointments.router)
 
 @app.get("/")
 def accueil():
