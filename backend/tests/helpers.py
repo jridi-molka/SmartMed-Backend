@@ -12,7 +12,7 @@ def create_doctor(db, weekday=0, start=time(9, 0), end=time(12, 0), duration=20)
     )
     db.add(user)
     db.flush()
-    doctor = Doctor(user_id=user.id, specialty="Cardiologie", city="Tunis",
+    doctor = Doctor(user_id=user.id, specialty=" Cardiologue", city="Tunis",
                     consultation_duration_min=duration)
     db.add(doctor)
     db.flush()
@@ -20,3 +20,15 @@ def create_doctor(db, weekday=0, start=time(9, 0), end=time(12, 0), duration=20)
                           start_time=start, end_time=end))
     db.commit()
     return doctor
+def patient_header(client, email="karim@mail.com"):
+    client.post("/auth/register",
+                json={"name": "Karim", "email": email, "password": "123456"})
+    token = client.post("/auth/login",
+                        json={"email": email, "password": "123456"}).json()["access_token"]
+    return {"Authorization": f"Bearer {token}"}
+
+
+def doctor_header(client):
+    token = client.post("/auth/login",
+                        json={"email": "salma@mail.com", "password": "123456"}).json()["access_token"]
+    return {"Authorization": f"Bearer {token}"}
