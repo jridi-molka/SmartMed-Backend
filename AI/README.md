@@ -3,7 +3,7 @@
 Ce dossier contient tout ce qui concerne l'intelligence artificielle du projet : données, préparation des données et futurs modèles.
 
 > **Sprint 1 (actuel)** : définir les données et les variables (features), créer des données simulées, les nettoyer, préparer l'architecture.
-> **Sprint 6** : entraîner et intégrer les modèles dans le backend FastAPI.
+> **Sprint 4** : entraîner et intégrer les modèles dans le backend FastAPI.
 
 ---
 
@@ -20,9 +20,9 @@ AI/
 │   ├── clean_data.py      # nettoyage + création de variables + rapport
 │   └── verify_cleaning.py # vérifie le nettoyage en le comparant à reference/
 ├── variables_study.ipynb  # étude des variables : graphiques, corrélations, conclusions par module
-├── recommendation/        # module de recommandation de médecins (Sprint 6)
-├── waiting_time/          # module de prédiction du temps d'attente (Sprint 6)
-├── sentiment/             # module d'analyse des avis (Sprint 6)
+├── recommendation/        # module de recommandation de médecins (Sprint 4)
+├── waiting_time/          # module de prédiction du temps d'attente (Sprint 4)
+├── sentiment/             # module d'analyse des avis (Sprint 4)
 ├── requirements.txt       # bibliothèques Python nécessaires
 └── README.md              # ce document
 ```
@@ -244,3 +244,24 @@ pip install -r requirements.txt
 - Ne jamais commiter `venv/`, `.env`, clés ou mots de passe.
 - Ne pas modifier un nom de colonne sans prévenir l'équipe Backend.
 - Travailler sur la branche `feature/ai-foundation`, puis ouvrir une Pull Request.
+
+
+
+## Prédiction du temps d'attente
+
+**Où :** `AI/waiting_time/predict.py`, fonction `predict_wait_time(...)`, qui renvoie l'attente estimée en minutes (entier).
+
+| Variable | Signification | Unité / valeurs | Exemple |
+|---|---|---|---|
+| `patients_before` | Nombre de patients dans la file avant celui qu'on évalue | entier ≥ 0 | 3 |
+| `avg_consultation_min` | Durée moyenne d'une consultation chez ce médecin | minutes | 15 |
+| `hour_of_day` | Heure à laquelle le patient arrive | 0 à 23 | 10 |
+| `day_of_week` | Jour de la semaine | 0 = lundi … 6 = dimanche | 0 |
+| `doctor_avg_delay_min` | Retard moyen habituel de ce médecin | minutes | 5 |
+
+**Exemple :**
+
+    from waiting_time.predict import predict_wait_time
+    predict_wait_time(3, 15, 10, 0, 5)   # -> 58
+
+**État actuel :** version simple par formule (patients devant × durée + retard + supplément heures de pointe et lundi). Un modèle de machine learning pourra la remplacer plus tard, avec exactement la même signature : le code appelant n'aura pas à changer.
