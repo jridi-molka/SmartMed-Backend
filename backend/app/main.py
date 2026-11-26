@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes import auth, users, slots, appointments
+from app.api.routes import agenda
 
 
 app = FastAPI(title="SmartMed API")
@@ -17,6 +18,7 @@ app.include_router(auth.router)
 app.include_router(users.router)
 app.include_router(slots.router)
 app.include_router(appointments.router)
+app.include_router(agenda.router)
 
 @app.get("/")
 def accueil():
