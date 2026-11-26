@@ -11,6 +11,11 @@ from app.models.user import User
 from app.schemas.appointment import AppointmentCreate
 from app.services.slot_service import get_doctor_slots
 
+from datetime import datetime, timedelta
+
+from sqlalchemy import select
+
+from app.models.queue_entry import QueueEntry
 
 def to_out(appt: Appointment) -> dict:
     return {
@@ -53,5 +58,52 @@ def create_appointment(db: Session, patient: User, data: AppointmentCreate) -> d
     except IntegrityError:
         db.rollback()
         raise HTTPException(status_code=409, detail="Slot already taken")
+    db.refresh(appt)
+    return to_out(appt)
+
+CANCEL_LIMIT_HOURS = 2
+
+
+def list_my_appointments(db: Session, patient: User, when: str) -> list[dict]:
+    rows = db.scalars(
+        select(Appointment).where(Appointment.patient_id == patient.id)
+    ).all()
+    now = now_local()
+
+    def start_dt(a):
+        return datetime.combine(a.date, a.start_time)
+
+    upcoming = [a for a in rows if a.status == "booked" and start_dt(a) > now]
+    past = [a for a in rows if a not in upcoming]
+
+    if when == "upcoming":
+        chosen = sorted(upcoming, key=start_dt)
+    else:
+        chosen = sorted(past, key=start_dt, reverse=True)
+    return [to_out(a) for a in chosen]
+
+
+def cancel_appointment(db: Session, patient: User, appointment_id: int) -> dict:
+    appt = db.scalar(
+        select(Appointment).where(
+            Appointment.id == appointment_id,
+            Appointment.patient_id == patient.id,
+        )
+    )
+    if appt is None:
+        raise HTTPException(status_code=404, detail="Appointment not found")
+    if appt.status != "booked":
+        raise HTTPException(status_code=409, detail="Appointment cannot be cancelled")
+
+    start = datetime.combine(appt.date, appt.start_time)
+    if start - now_local() < timedelta(hours=CANCEL_LIMIT_HOURS):
+        raise HTTPException(status_code=409, detail="Too late to cancel")
+
+    appt.status = "cancelled"
+    appt.cancelled_at = now_local()
+    entry = db.scalar(select(QueueEntry).where(QueueEntry.appointment_id == appt.id))
+    if entry is not None:
+        entry.status = "skipped"
+    db.commit()
     db.refresh(appt)
     return to_out(appt)
