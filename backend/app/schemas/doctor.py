@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class DoctorOut(BaseModel):
@@ -19,3 +19,26 @@ class DoctorListOut(BaseModel):
 
     items: list[DoctorOut]
     total: int
+
+class DoctorCreate(BaseModel):
+    """Données envoyées par un médecin pour créer son profil."""
+
+    model_config = ConfigDict(str_strip_whitespace=True)
+
+    specialty: str = Field(min_length=2, max_length=100)
+    bio: str | None = Field(default=None, max_length=1000)
+    address: str | None = Field(default=None, max_length=255)
+    city: str | None = Field(default=None, max_length=100)
+    consultation_duration_min: int = Field(default=20, ge=5, le=120)
+
+
+class DoctorUpdate(BaseModel):
+    """Données envoyées pour modifier son profil : tout est facultatif."""
+
+    model_config = ConfigDict(str_strip_whitespace=True)
+
+    specialty: str | None = Field(default=None, min_length=2, max_length=100)
+    bio: str | None = Field(default=None, max_length=1000)
+    address: str | None = Field(default=None, max_length=255)
+    city: str | None = Field(default=None, max_length=100)
+    consultation_duration_min: int | None = Field(default=None, ge=5, le=120)    
