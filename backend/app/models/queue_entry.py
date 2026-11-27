@@ -25,5 +25,6 @@ class QueueEntry(Base):
     started_at: Mapped[datetime | None] = mapped_column(DateTime)
     ended_at: Mapped[datetime | None] = mapped_column(DateTime)
     predicted_wait_min: Mapped[int | None]
+    patients_before: Mapped[int | None]
 
     appointment = relationship("Appointment")

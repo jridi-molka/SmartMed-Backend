@@ -8,6 +8,8 @@ from app.models.appointment import Appointment
 from app.models.queue_entry import QueueEntry
 from app.models.user import User
 
+from app.services.agenda_service import get_my_doctor
+
 ACTIVE = ("waiting", "called", "in_consultation")
 
 
@@ -88,3 +90,94 @@ def my_queue(db: Session, patient: User) -> dict:
     if entry is None:
         raise HTTPException(status_code=404, detail="Not in any queue today")
     return queue_snapshot(db, entry)
+
+QUEUE_ALLOWED = {
+    "waiting": {"called", "skipped"},
+    "called": {"in_consultation", "skipped"},
+    "in_consultation": {"done"},
+    "done": set(),
+    "skipped": set(),
+}
+
+
+def item_for(db: Session, entry: QueueEntry) -> dict:
+    appt = db.get(Appointment, entry.appointment_id)
+    patient = db.get(User, entry.patient_id)
+    return {
+        "id": entry.id,
+        "patient_name": patient.name,
+        "appointment_time": appt.start_time,
+        "status": entry.status,
+        "checked_in_at": entry.checked_in_at,
+        "called_at": entry.called_at,
+        "started_at": entry.started_at,
+        "ended_at": entry.ended_at,
+    }
+
+
+def list_doctor_queue(db: Session, user: User) -> list[dict]:
+    doctor = get_my_doctor(db, user)
+    entries = db.scalars(
+        select(QueueEntry)
+        .join(Appointment, Appointment.id == QueueEntry.appointment_id)
+        .where(QueueEntry.doctor_id == doctor.id,
+               QueueEntry.date == now_local().date())
+        .order_by(Appointment.start_time, QueueEntry.checked_in_at)
+    ).all()
+    return [item_for(db, e) for e in entries]
+
+
+def call_next(db: Session, user: User) -> dict:
+    doctor = get_my_doctor(db, user)
+    entry = db.scalar(
+        select(QueueEntry)
+        .join(Appointment, Appointment.id == QueueEntry.appointment_id)
+        .where(QueueEntry.doctor_id == doctor.id,
+               QueueEntry.date == now_local().date(),
+               QueueEntry.status == "waiting")
+        .order_by(Appointment.start_time, QueueEntry.checked_in_at)
+        .limit(1)
+        .with_for_update(of=QueueEntry)
+    )
+    if entry is None:
+        raise HTTPException(status_code=404, detail="Queue is empty")
+    entry.status = "called"
+    entry.called_at = now_local()
+    db.commit()
+    return item_for(db, entry)
+
+
+def _my_entry(db: Session, user: User, entry_id: int) -> QueueEntry:
+    doctor = get_my_doctor(db, user)
+    entry = db.scalar(
+        select(QueueEntry).where(QueueEntry.id == entry_id,
+                                 QueueEntry.doctor_id == doctor.id)
+    )
+    if entry is None:
+        raise HTTPException(status_code=404, detail="Queue entry not found")
+    return entry
+
+
+def _check(entry: QueueEntry, new: str) -> None:
+    if new not in QUEUE_ALLOWED[entry.status]:
+        raise HTTPException(status_code=409, detail="Invalid status transition")
+
+
+def start_consultation(db: Session, user: User, entry_id: int) -> dict:
+    entry = _my_entry(db, user, entry_id)
+    _check(entry, "in_consultation")
+    entry.status = "in_consultation"
+    entry.started_at = now_local()
+    db.commit()
+    return item_for(db, entry)
+
+
+def finish_consultation(db: Session, user: User, entry_id: int) -> dict:
+    entry = _my_entry(db, user, entry_id)
+    _check(entry, "done")
+    entry.status = "done"
+    entry.ended_at = now_local()
+    appt = db.get(Appointment, entry.appointment_id)
+    appt.status = "completed"
+    db.commit()
+    return item_for(db, entry)

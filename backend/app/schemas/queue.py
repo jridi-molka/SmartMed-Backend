@@ -15,3 +15,13 @@ class QueueStatusOut(BaseModel):
     estimated_wait_minutes: int | None = None
     method: str | None = None
     updated_at: dt.datetime
+
+class QueueEntryOut(BaseModel):
+    id: int
+    patient_name: str
+    appointment_time: dt.time
+    status: str
+    checked_in_at: dt.datetime
+    called_at: dt.datetime | None = None
+    started_at: dt.datetime | None = None
+    ended_at: dt.datetime | None = None
