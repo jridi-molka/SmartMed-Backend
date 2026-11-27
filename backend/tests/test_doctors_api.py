@@ -124,3 +124,26 @@ def test_specialties(client, doctors):
 def test_specialties_requires_token(client):
     r = client.get("/doctors/specialties")
     assert r.status_code in (401, 403)
+
+
+def test_doctor_detail(client, doctors):
+    doctor = doctors[0]  # Dr Salma
+    r = client.get(f"/doctors/{doctor.id}", headers=patient_header(client))
+    assert r.status_code == 200
+    assert r.json()["name"] == "Dr Salma"
+    assert r.json()["specialty"] == "Cardiologue"
+
+
+def test_doctor_detail_unknown_id(client, doctors):
+    r = client.get("/doctors/9999", headers=patient_header(client))
+    assert r.status_code == 404
+
+
+def test_doctor_detail_invalid_id(client, doctors):
+    r = client.get("/doctors/abc", headers=patient_header(client))
+    assert r.status_code == 422
+
+
+def test_doctor_detail_requires_token(client, doctors):
+    r = client.get(f"/doctors/{doctors[0].id}")
+    assert r.status_code in (401, 403)    
