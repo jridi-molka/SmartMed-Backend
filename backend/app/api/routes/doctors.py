@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from app.api.deps import get_current_user
 from app.db.session import get_db
 from app.models.user import User
-from app.schemas.doctor import DoctorListOut
+from app.schemas.doctor import DoctorListOut, DoctorOut
 from app.services import doctor_service
 
 router = APIRouter(prefix="/doctors", tags=["doctors"])
@@ -34,3 +34,13 @@ def read_doctors(
     user: User = Depends(get_current_user),
 ):
     return doctor_service.search_doctors(db, specialty, city, name, sort, skip, limit)
+
+
+
+@router.get("/{doctor_id}", response_model=DoctorOut)
+def read_doctor(
+    doctor_id: int,
+    db: Session = Depends(get_db),
+    user: User = Depends(get_current_user),
+):
+    return doctor_service.get_doctor(db, doctor_id)

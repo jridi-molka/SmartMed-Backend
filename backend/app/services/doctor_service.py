@@ -1,3 +1,4 @@
+from fastapi import HTTPException
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
@@ -52,3 +53,16 @@ def list_specialties(db: Session) -> list[str]:
     """Liste des spécialités présentes en base, sans doublon, triée."""
     stmt = select(Doctor.specialty).distinct().order_by(Doctor.specialty)
     return list(db.scalars(stmt).all())
+
+
+def get_doctor(db: Session, doctor_id: int) -> DoctorOut:
+    """Renvoie la fiche d'un médecin, ou une erreur 404 s'il n'existe pas."""
+    row = db.execute(
+        select(Doctor, User.name)
+        .join(User, Doctor.user_id == User.id)
+        .where(Doctor.id == doctor_id)
+    ).first()
+    if row is None:
+        raise HTTPException(status_code=404, detail="Médecin introuvable")
+    doctor, name = row
+    return _to_out(doctor, name)
