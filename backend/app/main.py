@@ -1,7 +1,8 @@
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import auth, users, slots, appointments
+from app.api.routes import auth, users, slots, appointments,queue
 from app.api.routes import agenda
 
 
@@ -19,6 +20,7 @@ app.include_router(users.router)
 app.include_router(slots.router)
 app.include_router(appointments.router)
 app.include_router(agenda.router)
+app.include_router(queue.router)
 
 @app.get("/")
 def accueil():
