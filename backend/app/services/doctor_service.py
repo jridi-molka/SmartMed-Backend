@@ -1,10 +1,11 @@
 from fastapi import HTTPException
-from sqlalchemy import func, select
+from sqlalchemy import delete, func, select
 from sqlalchemy.orm import Session
 
-from app.models.doctor import Doctor
+from app.models.doctor import Doctor, DoctorSchedule
 from app.models.user import User
 from app.schemas.doctor import DoctorCreate, DoctorListOut, DoctorOut, DoctorUpdate
+from app.schemas.schedule import ScheduleIn, ScheduleOut
 
 
 def _to_out(doctor: Doctor, name: str) -> DoctorOut:
@@ -101,3 +102,43 @@ def update_my_profile(db: Session, user: User, data: DoctorUpdate) -> DoctorOut:
     db.commit()
     db.refresh(doctor)
     return _to_out(doctor, user.name)
+
+
+
+def _schedule_of(db: Session, doctor_id: int) -> ScheduleOut:
+    """Plages d'un médecin, triées par jour puis par heure de début."""
+    rows = db.scalars(
+        select(DoctorSchedule)
+        .where(DoctorSchedule.doctor_id == doctor_id)
+        .order_by(DoctorSchedule.weekday, DoctorSchedule.start_time)
+    ).all()
+    return ScheduleOut.model_validate({"days": rows}, from_attributes=True)
+
+
+def get_my_schedule(db: Session, user: User) -> ScheduleOut:
+    doctor = _get_my_doctor(db, user)
+    return _schedule_of(db, doctor.id)
+
+
+def replace_my_schedule(db: Session, user: User, data: ScheduleIn) -> ScheduleOut:
+    """Remplace toute la semaine : on supprime les anciennes plages, puis on ajoute les nouvelles."""
+    doctor = _get_my_doctor(db, user)
+    db.execute(delete(DoctorSchedule).where(DoctorSchedule.doctor_id == doctor.id))
+    for slot in data.days:
+        db.add(
+            DoctorSchedule(
+                doctor_id=doctor.id,
+                weekday=slot.weekday,
+                start_time=slot.start_time,
+                end_time=slot.end_time,
+            )
+        )
+    db.commit()  # une seule transaction : tout est remplacé, ou rien
+    return _schedule_of(db, doctor.id)
+
+
+def get_doctor_schedule(db: Session, doctor_id: int) -> ScheduleOut:
+    """Horaires publics d'un médecin (404 s'il n'existe pas)."""
+    if db.get(Doctor, doctor_id) is None:
+        raise HTTPException(status_code=404, detail="Médecin introuvable")
+    return _schedule_of(db, doctor_id)

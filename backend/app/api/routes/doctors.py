@@ -8,6 +8,7 @@ from app.db.session import get_db
 from app.models.user import User
 from app.schemas.doctor import DoctorCreate, DoctorListOut, DoctorOut, DoctorUpdate
 from app.services import doctor_service
+from app.schemas.schedule import ScheduleIn, ScheduleOut
 
 router = APIRouter(prefix="/doctors", tags=["doctors"])
 
@@ -65,6 +66,27 @@ def update_my_profile(
 
 
 
+@router.get("/me/schedule", response_model=ScheduleOut)
+def read_my_schedule(
+    db: Session = Depends(get_db),
+    user: User = Depends(require_role("doctor")),
+):
+    return doctor_service.get_my_schedule(db, user)
+
+
+@router.put("/me/schedule", response_model=ScheduleOut)
+def replace_my_schedule(
+    data: ScheduleIn,
+    db: Session = Depends(get_db),
+    user: User = Depends(require_role("doctor")),
+):
+    return doctor_service.replace_my_schedule(db, user, data)
+
+
+
+
+
+
 
 
 
@@ -75,3 +97,13 @@ def read_doctor(
     user: User = Depends(get_current_user),
 ):
     return doctor_service.get_doctor(db, doctor_id)
+
+
+
+@router.get("/{doctor_id}/schedule", response_model=ScheduleOut)
+def read_doctor_schedule(
+    doctor_id: int,
+    db: Session = Depends(get_db),
+    user: User = Depends(get_current_user),
+):
+    return doctor_service.get_doctor_schedule(db, doctor_id)
