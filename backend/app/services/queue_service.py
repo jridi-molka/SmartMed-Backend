@@ -10,6 +10,9 @@ from app.models.user import User
 
 from app.services.agenda_service import get_my_doctor
 
+from app.models.doctor import Doctor
+from app.services import wait_time_service
+
 ACTIVE = ("waiting", "called", "in_consultation")
 
 
@@ -22,7 +25,7 @@ def compute_position(entries: list[dict], mine_id: int) -> dict:
     return {"position": rank + 1, "patients_before": rank}
 
 
-def queue_snapshot(db: Session, entry: QueueEntry) -> dict:
+def queue_snapshot(db: Session, entry: QueueEntry, store: bool = False) -> dict:
     rows = db.execute(
         select(QueueEntry.id, QueueEntry.status,
                Appointment.start_time, QueueEntry.checked_in_at)
@@ -35,12 +38,26 @@ def queue_snapshot(db: Session, entry: QueueEntry) -> dict:
          "start_time": r.start_time, "checked_in_at": r.checked_in_at}
         for r in rows
     ]
+    pos = compute_position(entries, entry.id)
+
+    if entry.status == "waiting":
+        doctor = db.get(Doctor, entry.doctor_id)
+        minutes, method = wait_time_service.estimate_wait(
+            db, doctor, pos["patients_before"]
+        )
+    else:
+        minutes, method = 0, None
+
+    if store:
+        entry.patients_before = pos["patients_before"]
+        entry.predicted_wait_min = minutes
+
     return {
         "queue_entry_id": entry.id,
         "status": entry.status,
-        **compute_position(entries, entry.id),
-        "estimated_wait_minutes": entry.predicted_wait_min,
-        "method": None,
+        **pos,
+        "estimated_wait_minutes": minutes,
+        "method": method,
         "updated_at": now_local(),
     }
 
@@ -76,7 +93,9 @@ def check_in(db: Session, patient: User, appointment_id: int) -> dict:
         db.rollback()
         raise HTTPException(status_code=409, detail="Already checked in")
     db.refresh(entry)
-    return queue_snapshot(db, entry)
+    snapshot = queue_snapshot(db, entry, store=True)
+    db.commit()
+    return snapshot
 
 
 def my_queue(db: Session, patient: User) -> dict:
