@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 
 from app.models.doctor import Doctor
 from app.models.user import User
-from app.schemas.doctor import DoctorListOut, DoctorOut
+from app.schemas.doctor import DoctorCreate, DoctorListOut, DoctorOut, DoctorUpdate
 
 
 def _to_out(doctor: Doctor, name: str) -> DoctorOut:
@@ -66,3 +66,38 @@ def get_doctor(db: Session, doctor_id: int) -> DoctorOut:
         raise HTTPException(status_code=404, detail="Médecin introuvable")
     doctor, name = row
     return _to_out(doctor, name)
+
+def _get_my_doctor(db: Session, user: User) -> Doctor:
+    """Cherche la fiche du médecin connecté (404 s'il n'en a pas encore)."""
+    doctor = db.scalar(select(Doctor).where(Doctor.user_id == user.id))
+    if doctor is None:
+        raise HTTPException(status_code=404, detail="Profil médecin introuvable")
+    return doctor
+
+
+def create_my_profile(db: Session, user: User, data: DoctorCreate) -> DoctorOut:
+    """Crée la fiche du médecin connecté (409 s'il en a déjà une)."""
+    if db.scalar(select(Doctor).where(Doctor.user_id == user.id)):
+        raise HTTPException(status_code=409, detail="Profil médecin déjà créé")
+    doctor = Doctor(user_id=user.id, **data.model_dump())
+    db.add(doctor)
+    db.commit()
+    db.refresh(doctor)
+    return _to_out(doctor, user.name)
+
+
+def get_my_profile(db: Session, user: User) -> DoctorOut:
+    return _to_out(_get_my_doctor(db, user), user.name)
+
+
+def update_my_profile(db: Session, user: User, data: DoctorUpdate) -> DoctorOut:
+    """Modifie seulement les champs envoyés."""
+    doctor = _get_my_doctor(db, user)
+    for field, value in data.model_dump(exclude_unset=True).items():
+        # la spécialité et la durée sont obligatoires : on ignore un null
+        if value is None and field in ("specialty", "consultation_duration_min"):
+            continue
+        setattr(doctor, field, value)
+    db.commit()
+    db.refresh(doctor)
+    return _to_out(doctor, user.name)

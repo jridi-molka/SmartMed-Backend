@@ -147,3 +147,136 @@ def test_doctor_detail_invalid_id(client, doctors):
 def test_doctor_detail_requires_token(client, doctors):
     r = client.get(f"/doctors/{doctors[0].id}")
     assert r.status_code in (401, 403)    
+
+
+
+# ---------- Profil du médecin connecté (D01, D02, D03) ----------
+
+def make_doctor_account(db, email, name="Dr Nouveau"):
+    """Un compte médecin SANS fiche (comme un médecin qui vient de s'inscrire)."""
+    user = User(
+        name=name,
+        email=email,
+        password_hash=hash_password("123456"),
+        role=UserRole.DOCTOR,
+    )
+    db.add(user)
+    db.commit()
+    return user
+
+
+def login_header(client, email):
+    token = client.post(
+        "/auth/login", json={"email": email, "password": "123456"}
+    ).json()["access_token"]
+    return {"Authorization": f"Bearer {token}"}
+
+
+PROFILE = {
+    "specialty": "Cardiologue",
+    "bio": "10 ans d'expérience",
+    "address": "12 rue X",
+    "city": "Tunis",
+    "consultation_duration_min": 25,
+}
+
+
+def test_create_profile_nominal(client, db):
+    make_doctor_account(db, "nouveau@mail.com")
+    h = login_header(client, "nouveau@mail.com")
+    r = client.post("/doctors/me", json=PROFILE, headers=h)
+    assert r.status_code == 201
+    assert r.json()["name"] == "Dr Nouveau"
+    assert r.json()["specialty"] == "Cardiologue"
+    assert r.json()["consultation_duration_min"] == 25
+
+
+def test_create_profile_defaults_and_trims_spaces(client, db):
+    make_doctor_account(db, "nouveau@mail.com")
+    h = login_header(client, "nouveau@mail.com")
+    r = client.post("/doctors/me", json={"specialty": "  Dentiste "}, headers=h)
+    assert r.status_code == 201
+    assert r.json()["specialty"] == "Dentiste"
+    assert r.json()["consultation_duration_min"] == 20
+
+
+def test_create_profile_twice_is_409(client, db):
+    make_doctor_account(db, "nouveau@mail.com")
+    h = login_header(client, "nouveau@mail.com")
+    assert client.post("/doctors/me", json=PROFILE, headers=h).status_code == 201
+    assert client.post("/doctors/me", json=PROFILE, headers=h).status_code == 409
+
+
+def test_create_profile_invalid_data_is_422(client, db):
+    make_doctor_account(db, "nouveau@mail.com")
+    h = login_header(client, "nouveau@mail.com")
+    assert client.post("/doctors/me", json={}, headers=h).status_code == 422
+    bad_duration = {**PROFILE, "consultation_duration_min": 3}
+    assert client.post("/doctors/me", json=bad_duration, headers=h).status_code == 422
+    short = {**PROFILE, "specialty": "A"}
+    assert client.post("/doctors/me", json=short, headers=h).status_code == 422
+
+
+def test_patient_cannot_use_doctor_profile_routes(client):
+    h = patient_header(client)
+    assert client.post("/doctors/me", json=PROFILE, headers=h).status_code == 403
+    assert client.get("/doctors/me", headers=h).status_code == 403
+    assert client.put("/doctors/me", json={"bio": "x"}, headers=h).status_code == 403
+
+
+def test_profile_routes_require_token(client):
+    assert client.post("/doctors/me", json=PROFILE).status_code in (401, 403)
+    assert client.get("/doctors/me").status_code in (401, 403)
+    assert client.put("/doctors/me", json={"bio": "x"}).status_code in (401, 403)
+
+
+def test_read_my_profile(client, db):
+    make_doctor_account(db, "nouveau@mail.com")
+    h = login_header(client, "nouveau@mail.com")
+    assert client.get("/doctors/me", headers=h).status_code == 404  # pas encore de fiche
+    client.post("/doctors/me", json=PROFILE, headers=h)
+    r = client.get("/doctors/me", headers=h)
+    assert r.status_code == 200
+    assert r.json()["city"] == "Tunis"
+
+
+def test_update_profile_changes_only_sent_fields(client, db):
+    make_doctor_account(db, "nouveau@mail.com")
+    h = login_header(client, "nouveau@mail.com")
+    client.post("/doctors/me", json=PROFILE, headers=h)
+    r = client.put("/doctors/me", json={"bio": "Nouvelle bio"}, headers=h)
+    assert r.status_code == 200
+    assert r.json()["bio"] == "Nouvelle bio"
+    assert r.json()["specialty"] == "Cardiologue"
+    assert r.json()["consultation_duration_min"] == 25
+    # la modification est bien enregistrée
+    assert client.get("/doctors/me", headers=h).json()["bio"] == "Nouvelle bio"
+
+
+def test_update_profile_errors(client, db):
+    make_doctor_account(db, "nouveau@mail.com")
+    h = login_header(client, "nouveau@mail.com")
+    assert client.put("/doctors/me", json={"bio": "x"}, headers=h).status_code == 404
+    client.post("/doctors/me", json=PROFILE, headers=h)
+    r = client.put("/doctors/me", json={"consultation_duration_min": 500}, headers=h)
+    assert r.status_code == 422
+
+
+def test_doctor_only_modifies_own_profile(client, db):
+    make_doctor_account(db, "a@mail.com", name="Dr A")
+    make_doctor_account(db, "b@mail.com", name="Dr B")
+    ha = login_header(client, "a@mail.com")
+    hb = login_header(client, "b@mail.com")
+    client.post("/doctors/me", json={**PROFILE, "bio": "bio de A"}, headers=ha)
+    client.post("/doctors/me", json={**PROFILE, "bio": "bio de B"}, headers=hb)
+    client.put("/doctors/me", json={"bio": "A a changé"}, headers=ha)
+    assert client.get("/doctors/me", headers=ha).json()["bio"] == "A a changé"
+    assert client.get("/doctors/me", headers=hb).json()["bio"] == "bio de B"
+
+
+def test_new_profile_appears_in_public_search(client, db):
+    make_doctor_account(db, "nouveau@mail.com")
+    h = login_header(client, "nouveau@mail.com")
+    client.post("/doctors/me", json=PROFILE, headers=h)
+    r = client.get("/doctors", params={"name": "Nouveau"}, headers=patient_header(client))
+    assert r.json()["total"] == 1    
